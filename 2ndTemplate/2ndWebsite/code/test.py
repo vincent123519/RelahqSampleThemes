@@ -66,4 +66,4 @@ def generate_html(config_file, template_file, output_file):
     print(f"Generated HTML saved to: {output_file_path}")
 
 if __name__ == "__main__":
-    generate_html('ind_config.cfg', 'ind_dollar.html', 'ind_final.html')
+    generate_html('dy_config.cfg', 'dy_dollar.html', 'dy_final.html')
