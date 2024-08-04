@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revastaff Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .navContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      padding: .5vw 8vw .5vw 8vw;
+      background-color: white;
+      position: fixed;
+      top: 0;
+      z-index: 99;
+      width: 84vw;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+      margin: 0 auto;
+      padding: 4vw 8vw;
+    }
+    nav {
+      background-color: #ffffff;
+      color: #000;
+      padding: 15px 0;
+    }
+    nav .revaLogo {
+      width: 10em;
+      margin-left: 1vw;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+    }
+    .themes {
+      margin-top: 8vw;
+      padding-bottom: 50px;
+    }
+    .themes h2 {
+      font-size: 35px;
+      text-align: center;
+    }
+    .themeCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      margin-bottom: 8vw;
+    }
+    .themeTitle h3 {
+      font-size: 20px;
+    }
+    .themeTitle p {
+      text-align: justify;
+      padding: 1vw;
+    }
+    .themeContainer {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+      justify-content: center;
+      margin: 1vw;
+    }
+    .card {
+      width: 19vw;
+      height: 12vw;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+      text-align: justify;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      font-family: 'Arial', sans-serif; 
+    }
+    .card a {
+      text-decoration: none;
+      color: #333;
+      position: relative;
+      display: block;
+    }
+    .card a .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: opacity 0.3s ease;
+      opacity: 1;
+    }
+    .card a:hover .overlay {
+      opacity: 0;
+    }
+    .overlay-content {
+      z-index: 1;
+    }
+    .card:hover, .card a:hover {
+      transform: scale(1.02);
+    }
+    .card h3 {
+      margin-top: 1vw;
+      text-align: justify;
+    }
+    .card .propertyImage {
+      border-radius: 10px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .card p {
+      text-align: justify;
+      margin-bottom: 0;
+    }
+    a.disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+    footer {
+      text-align: center;
+      margin-top: 15vw;
+    }
+    .footer-contact {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .footer-contact a {
+      color: #000;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    .footer-contact p {
+      font-size: 1vw;
+      margin: 20px;
+    }
+    .footer-logo {
+      width: 12vw;
+    }
+    .dropdown {
+      display: none;
+    }
+    .menu .active a {
+      background-color: #fed500;
+      color: #000;
+      padding: 10px 30px;
+      border-radius: 8px;
+    }
+    .menu li:hover a {
+      background-color: #fed500;
+      color: #000;
+      padding: 10px 30px;
+      border-radius: 8px;
+    }
+
+    @media only screen and (min-width: 1001px) and (max-width: 1600px) {
+      .container {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+      .card {
+        width: 19vw;
+        height: 12.5vw;
+      }
+      footer {
+        text-align: center;
+        margin-top: 30vw;
+      }
+    }
+
+    @media only screen and (min-width: 451px) and (max-width: 1000px) {
+      .navContainer {
+        padding: 1vw 8vw 1vw 8vw;
+      }
+      nav .revaLogo {
+        width: 10em;
+      }
+      ul {
+        display: none;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: auto;
+      }
+      .themes h2 {
+        font-size: 6.5vw;
+        text-align: center;
+        margin-top: 20vw;
+      }
+      .themeTitle h3 {
+        font-size: 5vw;
+      }
+      .themeTitle p {
+        text-align: justify;
+        margin: 6vw;
+        font-size: 3.5vw;
+      }
+      .themeContainer {
+        display: grid;
+        grid-template-columns: none;
+      }
+      .card {
+        width: 70vw;
+        height: 46vw;
+      }
+      .card h3 {
+       font-size: 4vw;
+      }
+      .footer-contact {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 5vw;
+        background-color: ghostwhite;
+      }
+      .footer-contact p {
+        font-size: 3vw;
+        margin: 20px;
+      }
+      .footer-logo {
+        width: 24vw;
+      }
+      .dropdown {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .dropdown-toggle {
+        background-color: transparent;
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .dropdown-toggle i {
+        font-size: 2.5em;
+        padding: .5em;
+      }
+      .dropdown-toggle i:hover {
+        background-color: #fed500;
+        border-radius: 8px;
+      }
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+        top: 5em;
+        padding: 4vw;
+        border-radius: 10px;
+        border: 1px solid #000;
+      }
+      .dropdown-menu a {
+        color: #000;
+        padding: 12px 16px;
+        display: block;
+        text-decoration: none;
+      }
+      .dropdown-menu a i {
+        margin-right: 10px;
+      }
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+      .dropdown-menu .active a {
+        background-color: #fed500;
+        color: #000;
+        border-radius: 8px;
+      }
+      .dropdown:hover .dropdown-menu .active {
+          background-color: #fed500;
+          color: #000;
+          border-radius: 8px;
+      }
+
+    }
+    @media only screen and (min-width: 220px) and (max-width: 450px) {
+      .navContainer {
+        padding: 2vw 8vw 2vw 8vw;
+      }
+      nav ul {
+        display: none;
+      }
+      nav .revaLogo {
+        width: 30vw;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: none;
+        grid-gap: 20px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .themes h2 {
+        font-size: 8vw;
+        text-align: center;
+        margin-top: 32vw;
+      }
+      .themeTitle h3 {
+        font-size: 6vw;
+        margin-top: 12vw;
+      }
+      .themeContainer {
+        display: grid;
+        grid-template-columns: auto;
+      }
+      .card {
+        width: 85vw;
+        height: 56vw;
+      }
+      footer {
+        text-align: center;
+        margin-top: 70vw;
+      }
+      .footer-contact {
+        flex-direction: column-reverse;
+        font-size: 2vw;
+        background-color: ghostwhite;
+      }
+      .footer-contact p {
+        font-size: 4vw;
+        margin: 20px;
+      }
+      .footer-logo {
+        width: 24vw;
+      }
+      .dropdown {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .dropdown-toggle {
+        background-color: transparent;
+        color: #000;
+        border: none;
+        cursor: pointer;
+      }
+      .dropdown-toggle i {
+        font-size: 2em;
+        padding: .5em;
+      }
+      .dropdown-toggle i:hover {
+        background-color: #fed500;
+        border-radius: 8px;
+      }
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+        top: 3.5em;
+        padding: 4vw;
+        border-radius: 10px;
+        border: 1px solid #000;
+      }
+      .dropdown-menu a {
+        color: #000;
+        padding: 12px 16px;
+        display: block;
+        text-decoration: none;
+      }
+      .dropdown-menu a i {
+        margin-right: 10px;
+      }
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+      .dropdown-menu .active a {
+        background-color: #fed500;
+        color: #000;
+        border-radius: 8px;
+      }
+      .dropdown:hover .dropdown-menu .active {
+          background-color: #fed500;
+          color: #000;
+          border-radius: 8px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="navContainer">
+      <img src="https://revastaff-ph.app/revastaff/sqldbm/.app_logo.png" alt="Revastaff" class="revaLogo">
+      <ul class="menu">
+        <li><a href="#" class="disabled">Home</a></li>
+        <li><a href="">Themes</a></li>
+        <li><a href="#" class="disabled">Job Number</a></li>
+        <li><a href="#" class="disabled">Services</a></li>
+        <li><a href="#" class="disabled">Contact</a></li>
+      </ul>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+          <!-- <span class="menu-text">Menu</span> -->
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a href="#" class="disabled"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href=""><i class="fas fa-paint-brush"></i> Themes</a></li>
+          <li><a href="#" class="disabled"><i class="fas fa-briefcase"></i> Job Number</a></li>
+          <li><a href="#" class="disabled"><i class="fas fa-cogs"></i> Services</a></li>
+          <li><a href="#" class="disabled"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <section class="themes">
+    <h2> Property Themes</h2>
+    <div class="container">
+        <div class="themeCard">
+
+          <div class="themeTitle">
+            <h3>INDIANA</h3>
+            <p>    
+            This template offers a visually engaging experience with a slideshow and carousel of property images, 
+            along with an open house schedule for convenient viewing. Additionally, it includes a 3D virtual tour to explore the home's interior and
+            a detailed floor plan for spatial understanding, making it easy for potential buyers to envision themselves in the space and schedule a visit.
+            </p>
+          </div>
+
+          <div class="themeContainer">
+              <div class="card">
+                <a href="/sprop/result/theme1-job-2121.html" target='_blank'>
+                  <img src="https://revastaff-ph.s3.us-east-1.amazonaws.com/revajobs/12008/new/12%20Hannan%20Pl%20Rye%2C%20NY%2010580%2801of35%29.jpg" alt="Property Image" class="propertyImage">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h3>12 Hannan Pi</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="/sprop/result/theme1-job-11750.html" target='_blank'>
+                  <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%281%20of%2058%29.jpg" alt="Property Image" class="propertyImage">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h3>6 Stonehouse Rd</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+      
+              <div class="card">
+                <a href="/sprop/result/theme1-job-11749.html" target='_blank'>
+                  <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2856%20of%2060%29.jpg" alt="Property Image" class="propertyImage">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h3>257 Fox Meadow Rd</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+      
+              <div class="card">
+                <a href="/sprop/result/theme1-job-11748.html" target='_blank'>
+                  <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2802%20Of%20%20%20%2032%29.JPG" alt="Property Image" class="propertyImage">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h3>Dy House</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+          </div>
+        </div>
+
+        <div class="themeCard">
+
+          <div class="themeTitle">
+            <h3>ARIZONA</h3>
+            <p>
+              This cutting-edge template combines the best of both worlds—a captivating video showcasing the property, accompanied 
+              by a stunning slideshow of high-quality images. Scroll through the property photos for a curated visual journey. Dive 
+              deeper with an interactive 3D tour to explore every corner, and visualize the layout seamlessly with the detailed floor plan.
+            </p>
+          </div>
+
+          <div class="themeContainer">
+            <div class="card">
+              <a href="/sprop/result/theme2-job-2121.html" target='_blank'>
+                <img src="https://revastaff-ph.s3.us-east-1.amazonaws.com/revajobs/12008/new/12%20Hannan%20Pl%20Rye%2C%20NY%2010580%2801of35%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>12 Hannan Pi</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="card">
+              <a href="/sprop/result/theme2-job-11750.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%281%20of%2058%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>6 Stonehouse Rd</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="card">
+              <a href="/sprop/result/theme2-job-11749.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2856%20of%2060%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>257 Fox Meadow Rd</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="card">
+              <a href="/sprop/result/theme2-job-11748.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2802%20Of%20%20%20%2032%29.JPG" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>Dy House</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="themeCard">
+          <div class="themeTitle">
+            <h3>CALIFORNIA</h3>
+            <p>           
+              This template provides a comprehensive virtual experience for exploring a potential home. It includes a captivating video tour, 
+              an interactive 3D walkthrough, a detailed floor plan for layout visualization, a gallery of high-quality property photos, and an 
+              embedded Google Map to explore the neighborhood. Try it now!
+            </p>  
+          </div>
+
+          <div class="themeContainer">
+            <div class="card">
+              <a href="/sprop/result/theme3-job-2121.html" target='_blank'>
+                <img src="https://revastaff-ph.s3.us-east-1.amazonaws.com/revajobs/12008/new/12%20Hannan%20Pl%20Rye%2C%20NY%2010580%2801of35%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>12 Hannan Pi</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="card">
+              <a href="/sprop/result/theme3-job-11750.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%281%20of%2058%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>6 Stonehouse Rd</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="card">
+              <a href="/sprop/result/theme3-job-11749.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2856%20of%2060%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>257 Fox Meadow Rd</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="card">
+              <a href="/sprop/result/theme3-job-11748.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2802%20Of%20%20%20%2032%29.JPG" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>Dy House</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="themeCard">
+          <div class="themeTitle">
+            <h3>ATLANTA</h3>
+            <p>This template exhibits the beauty of your home. It includes a detailed information of the property positioned at the right side for an aesthetic look, 
+              an interactive 3D walkthrough, a detailed floor plan for layout visualization, a gallery of high-quality property photos, and an 
+              embedded Google Map to explore the neighborhood.
+            </p>  
+          </div>
+
+          <div class="themeContainer">
+            <div class="card">
+              <a href="/sprop/result/theme4-job-2121.html" target='_blank'>
+                <img src="https://revastaff-ph.s3.us-east-1.amazonaws.com/revajobs/12008/new/12%20Hannan%20Pl%20Rye%2C%20NY%2010580%2801of35%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>12 Hannan Pi</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="card">
+              <a href="/sprop/result/theme4-job-11750.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%281%20of%2058%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>6 Stonehouse Rd</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="card">
+              <a href="/sprop/result/theme4-job-11749.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2856%20of%2060%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>257 Fox Meadow Rd</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="card">
+              <a href="/sprop/result/theme4-job-11748.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2802%20Of%20%20%20%2032%29.JPG" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>Dy House</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="themeCard">
+          <div class="themeTitle">
+            <h3>MARYSVILLE</h3>
+            <p>This template shows the beauty of your property by highlighting its features. It includes a detailed information of the property positioned at the left side for an aesthetic look, 
+              an interactive 3D walkthrough, a detailed floor plan for layout visualization, a gallery of high-quality property photos, and an embedded Google Map to explore the neighborhood.
+            </p>  
+          </div>
+
+          <div class="themeContainer">
+            <div class="card">
+              <a href="/sprop/result/theme5-job-2121.html" target='_blank'>
+                <img src="https://revastaff-ph.s3.us-east-1.amazonaws.com/revajobs/12008/new/12%20Hannan%20Pl%20Rye%2C%20NY%2010580%2801of35%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>12 Hannan Pi</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="card">
+              <a href="/sprop/result/theme5-job-11750.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%281%20of%2058%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>6 Stonehouse Rd</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="card">
+              <a href="/sprop/result/theme5-job-11749.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2856%20of%2060%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>257 Fox Meadow Rd</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="card">
+              <a href="/sprop/result/theme5-job-11748.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2802%20Of%20%20%20%2032%29.JPG" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>Dy House</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="themeCard">
+          <div class="themeTitle">
+            <h3>ADELAIDE</h3>
+            <p>This template provides an aesthetically pleasing design that showcases the key features of the property with
+              an interactive 3D walkthrough, a detailed floor plan for layout visualization, a gallery of high-quality property photos, and an 
+              embedded Google Map to explore the neighborhood. Inquiries can be sent through our form to get more information on the property.
+            </p>  
+          </div>
+
+          <div class="themeContainer">
+            <div class="card">
+              <a href="/sprop/result/theme6-job-2121.html" target='_blank'>
+                <img src="https://revastaff-ph.s3.us-east-1.amazonaws.com/revajobs/12008/new/12%20Hannan%20Pl%20Rye%2C%20NY%2010580%2801of35%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>12 Hannan Pi</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="card">
+              <a href="/sprop/result/theme6-job-11750.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%281%20of%2058%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>6 Stonehouse Rd</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="card">
+              <a href="/sprop/result/theme6-job-11749.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2856%20of%2060%29.jpg" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>257 Fox Meadow Rd</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="card">
+              <a href="/sprop/result/theme6-job-11748.html" target='_blank'>
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2802%20Of%20%20%20%2032%29.JPG" alt="Property Image" class="propertyImage">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>Dy House</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </section>
+  <footer>
+    <div class="footer-contact">
+        <p>&copy; 2024 REVASTAFF</p>
+        <p>Phone: (123) 456-7890 | Email: happy@revastaff.com</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+        <p>
+          <img src="https://revastaff-ph.app/revastaff/sqldbm/.app_logo.png" alt="Revastaff" class="footer-logo">
+        </p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const currentPageUrl = window.location.href;
+
+      const dropdownLinks = document.querySelectorAll('.dropdown-menu a');
+
+      dropdownLinks.forEach(link => {
+          if (link.href === currentPageUrl) {
+              link.parentElement.classList.add('active');
+          }
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const currentPageUrl = window.location.href;
+
+      const dropdownLinks = document.querySelectorAll('.menu a');
+
+      dropdownLinks.forEach(link => {
+          if (link.href === currentPageUrl) {
+              link.parentElement.classList.add('active');
+          }
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const icon = document.querySelector('.fa-solid fa-bars');
+
+    icon.addEventListener('click', function() {
+        if (dropdownMenu.style.display === 'block') {
+            dropdownMenu.style.display = 'none';
+            icon.setAttribute('aria-expanded', 'false');
+        } else {
+            dropdownMenu.style.display = 'block';
+            icon.setAttribute('aria-expanded', 'true');
+        }
+    });
+    dropdownToggle.addEventListener('click', function() {
+        if (dropdownMenu.style.display === 'block') {
+            dropdownMenu.style.display = 'none';
+            dropdownToggle.setAttribute('aria-expanded', 'false');
+        } else {
+            dropdownMenu.style.display = 'block';
+            dropdownToggle.setAttribute('aria-expanded', 'true');
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!dropdownMenu.contains(event.target) && event.target !== dropdownToggle) {
+            dropdownMenu.style.display = 'none';
+            dropdownToggle.setAttribute('aria-expanded', 'false');
+        }
+        });
+    });
+
+
+  </script>
+
+</body>
+</html>
