@@ -1,0 +1,2339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dy House, Pristina</title>  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=CrimsonText">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    .realtor-details a {
+      color: black;
+    }
+    h1 {
+      font-size: 4vw;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      font-family: "Muli";
+    }
+    h3 {
+      font-size: 1.5vw;
+      margin-bottom: 20px;
+    }
+    h4 {
+      font-size: 1vw;
+      padding-left: 2vw;
+      text-transform: uppercase;
+    }
+    .title-text {
+      font-size: 2vw;
+      margin: 0;
+      font-family: "Muli";
+      text-align: center;
+      text-transform: uppercase;
+      color: black;
+    }
+    .centerTitle {
+      font-size: 2vw;
+      font-family: "Muli";
+      padding: 0;
+      margin-bottom: 3vw;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .med-text {
+      font-size: 1vw;
+      padding: 0;
+    }
+    .galleryText {
+      font-size: 1.2vw;
+      margin-top: 5vw;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .text-center {
+      font-size: 1vw;
+      color: black;
+      text-align: center;
+      margin: 0;
+    }
+    .prev:hover, .next:hover, .prev-buttons:hover, .next-buttons:hover, .custom-prev:hover, .custom-next:hover{
+      color: white;
+      text-decoration: none;
+    } 
+    .prev:active, .next:active, .prev-buttons:active, .next-buttons:active, .custom-prev:active, .custom-next:active{
+      color: white;
+      text-decoration: none;
+    } 
+    body {
+      font-family: "Muli";
+      margin: 0;
+      padding: 0;
+      background-color: #fefcfb;
+    }
+    #home {
+      position: relative;
+    }
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      position: fixed;
+      grid-gap: 15px;
+      padding: 0;
+      height: 60px;
+      width: 100%;
+      z-index: 99;
+      background-color: ghostwhite;
+      border-bottom: 1px solid black;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .logo img {
+      position: fixed;
+      top: 15px;
+      z-index: 100;
+      width: 7rem;
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 4vw;
+    }
+    #menu {
+      border-left: 1px solid #000;
+      margin-right: 2vw;
+    }
+    #menu a {
+      color: black;
+      text-decoration: none;
+      padding: 0 .4vw;
+    }
+    .addressContainer {
+      height: 100%;
+      z-index: 9;
+      border-right: 1px solid #000;
+      height: 100%;
+      position: fixed;
+      z-index: 9;
+      width: 140px;
+      background: ghostwhite;
+      right: 0px;
+    }
+    .address {
+      font-family: "Muli", sans-serif !important;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.1em;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 0.0138889em;
+      top: 95vh;
+      left: 50px;
+      width: 100vh;
+      transform: rotate(270deg);
+      transform-origin: left top 0;
+      position: relative;
+      bottom: 0;
+      margin: auto;
+      right: 0;
+      height: 210px;
+    }
+    .backgroundImage{
+      background-image: url('https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2801%20Of%20%20%20%2032%29.JPG');
+      background-size: cover;   
+      background-position: center; 
+      width: 100vw;             
+      height: 100vh;           
+      position: fixed;          
+      top: 0;                   
+      left: 0;                  
+      padding-left: 7vw;
+      box-sizing: border-box; 
+      margin-top: 59px; 
+    }
+    .sideContainer {
+      width: 40vw;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9;
+      height: 100vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      direction: rtl;
+    }
+    .topPhoto {
+      display: none;
+    }
+    .priceOnMobile {
+      display: none;
+    }
+    .blankSection {
+      background:  transparent;
+      height: 100vh;
+      padding: 10vw;
+      margin: 15vw;
+    }
+    .sideSection {
+      width: 100%;
+      background-color: ghostwhite;
+      position: relative;
+      right: 0;
+      direction: ltr;
+    }
+    #details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 5vw;
+    }
+    #details-menu {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .detail-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-right: 2vw;
+    }
+    .detail-item .material-icons {
+      display: none;
+    }
+    #description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .propertyAddress {
+      font-size: 2.5vw;
+      margin: 1vw 0;
+      font-weight: 700;
+      font-family: "Crimson Text";
+      text-transform: uppercase;
+    }
+    #propertyDescription {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: space-evenly;
+      grid-gap: 20px;
+      margin-top: 5vw;
+    }
+    #propertyDescriptionBottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      grid-gap: 20px;
+      background-image: radial-gradient(circle, #CCCCCC 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    .description {
+      line-height: 1.5;
+      font-size: 1vw;
+      letter-spacing: 2px;
+      padding: 2vw;
+    }
+    #feature-title {
+      font-size: 2vw;
+      font-family: "Muli";
+      text-transform: uppercase;
+      text-align: center;
+      margin: 4vw;
+    }
+    #feature-list {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+      margin-bottom: 15vw;
+    }
+    #feature-list li {
+      margin-right: 1vw; 
+      margin-bottom: 1vw;
+      font-size: 1vw;
+      color: black; 
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    #feature-list :hover {
+      background-color: #E3E3E3; 
+      color: black; 
+      transform: scaleX(1.02);
+      transform-origin: center;
+    }
+    .parallax {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(180deg,rgba(0, 0, 0, 0.644) 20%,rgba(255,255,255,0) 100%);
+      background-image: url("https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2802%20Of%20%20%20%2032%29.JPG");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      position: relative;
+    }
+    .parallax::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 45vw;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); 
+    }
+    .parallax-card {
+      padding: 20px;
+      border-radius: 10px;
+      position: relative; 
+      z-index: 1; 
+      color: white;
+    }
+    .gallery {
+      display: flex;
+      margin: 2vw auto;
+    }
+    .galleryItem {
+      display: grid;
+      grid-template-columns: auto auto;
+      margin: 0 auto;
+    }
+    .photo:hover{
+      background: rgba(0,0,0,0.12);
+      transform: translateX(0%) scale(1.010);
+    }
+    .photo {
+      width: 18vw;
+      height: 12vw;
+      object-fit: cover;
+      margin: 0.1vw;
+    }
+    .propertyVideos {
+      display: flex;
+      flex-direction: column;
+      top: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    .propertyMedia {
+      display: flex;
+      flex-direction: column;
+    }
+    .showcase-tabs-wrapper {
+      font-family: 'Muli';
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 2vw;
+      margin: 4vw 6vw 0 6vw;
+    }
+    .showcase-tabs-wrapper a {
+      text-decoration: none;
+      color: black;
+    }
+    .showcase-tabs-wrapper a:hover {
+      text-decoration: underline;
+    }
+    .showcase-tabs-wrapper a:active {
+      text-decoration: underline;
+    }
+    .propertyCategory {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.4vw;
+      margin: 1vw;
+    }
+    .floorPlanImage img {
+      width: 25vw;
+    }
+    .videoPlayer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0% 2% 4% 2%;
+    }
+    #videoPlayer {
+      width: 35vw;
+      margin-top: 2vw;
+    }
+    .propertyRealtor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding: 4vw;
+      background-image: radial-gradient(circle, #CCCCCC 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    .realtorDetails {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+    .realtor {
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      margin-bottom: 5vw;
+    }
+    .realtor-info {
+      margin: 1%;
+      font-size: 2vw;
+    }
+    .realtor-details p{
+      margin: 0;
+      padding-left: 2vw;
+      font-size: .9vw;
+    }
+    .realtor-img {
+      width: 8vw; 
+      box-shadow: 8px 18px 30px -10px rgba(0,0,0,0.25);
+      border: 1px solid black;
+    }
+    .realtorImg {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .google-maps-section {
+      text-align: center;
+      margin-bottom: 12vw;
+    }
+    .location {
+      text-transform: uppercase;
+      margin: 5vw 0;
+      padding: 0 4vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3vw;
+      text-transform: uppercase;
+    }
+    .leftAddress {    
+      font-size: 3vw;
+      text-align: left;
+    }
+    .rightAddress p {
+      font-size: 1.5vw;
+      margin-bottom: 0;
+      text-align: right;
+    }
+    .googleMap {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 35vw;
+    }
+    .contact-footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color:  #ffd700;
+      /* border-top: 10px solid black;
+      border-bottom: 10px solid black; */
+    }
+    .contact-form-section {
+      padding: 1vw;
+      text-align: center;
+      width: 30vw;
+      border-radius: 25px;
+      margin-bottom: 10vw;
+    }
+    .contactForm {
+      margin: 3vw 0;
+    }
+    .form-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      margin: 3vw auto 3vw auto;
+    }
+    .form-group input[type="text"] {
+      border: none; 
+      border: .1vw solid black; 
+      padding: 1.5vw; 
+      margin-bottom: 1vw; 
+      width: 25vw; 
+      box-sizing: border-box;
+      outline: none;
+      font-size: 1vw;
+      background-color: white;
+    }
+    .form-group label {
+      text-align: left;
+      font-size: 1vw;
+      color: #9E9F9F;
+      margin: 0;
+    }
+    .inquiryButton {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .inquiryBtn {
+      padding: .5vw;
+      text-align: center;
+      margin: .5vw;
+      width: 15vw;
+      font-size: 1vw;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 25px;
+    }
+    .inquiryBtn:hover {
+      background-color: black;
+      color: white;
+    }
+    .footer {
+      padding: 2vw;
+      /* margin-top: 10vw; */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: ghostwhite; 
+
+    }
+    .footerDetails {
+      max-width: 65vw;
+    }
+    .revaLogo {
+      width: 12vw;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: .5vw 0;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: 1100;
+      cursor: pointer;
+    }
+    .socmed ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .socmed li {
+      margin: 0.5vw 1vw;
+    }
+    .socmed li img {
+      width: 2vw;
+      height: 2vw;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    input {
+      height: 5vh;
+      width: 90%;
+    }
+    .slideshowModal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+    .slideshow-modal-content {
+      margin: auto;
+      display: block;
+      height: 100%;
+    }
+    .slideshowModal-img {
+      position: relative;
+      margin: auto 0;
+      top: 1vw;
+      padding: 0;
+      height: 35vw;
+      /* width: 50%; */
+    }
+    .closeSlideshow {
+      color: #fff;
+      position: absolute;
+      top: 0;
+      right: 2vw;
+      font-size: 2vw;
+      transition: 0.3s;
+    }
+    .closeSlideshow:hover,
+    .closeSlideshow:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .mySlides {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .prev, .next {
+      position: fixed;
+      top: 50%;
+      margin-top: -4vw auto;
+      padding: 0 12vw;
+      color: white;
+      font-weight: bold;
+      font-size: 2rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    .prev {
+      right: 82vw;
+      top: 50%;
+    }
+    .next {
+      left: 82vw;
+      top: 50%;
+    }
+    @media only screen and (max-width: 700px) {
+      .slideshow-modal-content {
+        width: 100%;
+      }
+    }
+    .custom-modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+    }
+    .custom-modal-content {
+      margin: 2vw auto;
+      display: block;
+      /* width: 900px; */
+      height: 35vw;
+    }
+    .custom-close {
+      position: absolute;
+      top: 68px;
+      right: 2vw;
+      color: #f1f1f1;
+      font-size: 2vw;
+      cursor: pointer;
+    }
+    .custom-carousel-img {
+      width: 100px; 
+      height: auto;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .custom-prev, .custom-next {
+      cursor: pointer;
+      position: absolute;
+      width: auto;
+      padding: 2vw 20vw;
+      color: white;
+      font-size: 2rem;
+    }
+    .custom-prev {
+      right: 77vw;
+      top: 50%;
+    }
+    .custom-next {
+      left: 77vw;
+      top: 50%;
+    }
+
+    .floating-menu {
+      display: none;
+    }
+    .sideMenu {
+      position: fixed;
+      transition: transform 0.3s ease; 
+      transform: translateX(100%);
+    }
+
+/* Ipad*/
+@media only screen and (min-width: 451px) and (max-width: 1000px) {
+    h1 {
+      font-size: 6vw;
+    }
+    h2 {
+      font-size: 3.5vw;
+    }
+    h3 {
+      font-size: 4vw;
+    }
+    h4 {
+      font-size: 3vw;
+      margin-top: 3vw;
+      padding-left: 0;
+    }
+    .title-text {
+      font-size: 4vw;
+      padding-bottom: 6vw;
+      font-family: "Muli";
+    }
+    .med-text {
+      font-size: 3vw;
+      padding: 0;
+      font-weight: 700;
+    }
+    .text-center {
+      font-size: 1.5vw;
+    }
+    body {
+      width: 100%;
+      margin: 0;
+    }
+    #home {
+      width: 100%;
+    }
+    .logo img {
+      position: fixed;
+      z-index: 1000;
+      width: 8rem;
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 3vw;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      grid-gap: 5px;
+      z-index: 998;
+      height: 61px;
+    }
+    .addressContainer {
+      display: none;
+    }
+    .backgroundImage {
+      display: none;
+    }
+    .blankSection {
+      display: none;
+    }
+    #menu {
+        display: none;
+    }
+    .address {
+      position: relative;
+    }
+    .price {
+      display: none;
+    }
+    .sideContainer {
+      width: 100vw;
+      z-index: 9;
+      height: 100vh;
+    }
+    .topPhoto {
+      position: relative;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      margin-top: 59px;
+    }
+    .homePhoto {
+      width: 100vw;
+      height: 66vw;
+    }
+    .priceOnMobile {
+      display: flex;
+    }
+    #details {
+      justify-content: flex-start;
+      padding: 4vw 0;
+      grid-gap: 2vw;
+    }
+    #details-menu {
+      display: flex;
+      grid-gap: 20px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .detail-item {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .detail-item .material-icons {
+      font-size: 4vw;
+    }
+    .propertyAddress {
+      justify-content: flex-start;
+      display: flex;
+      font-size: 5vw;
+    }
+    #propertyDescription {
+      justify-content: center;
+    }
+    #propertyDescriptionBottom {
+      justify-content: center;
+    }
+    .description {
+      width: 100%;
+      font-size: 2vw;
+      padding: 5vw;
+      text-align: justify;
+    } 
+    #features {
+      width: 100%;
+      padding: 5vw;
+    }
+    #feature-title {
+      font-size: 5vw;
+      text-align: center;
+    }
+    #feature-list {      
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+      margin-bottom: 15vw;
+    }
+    .parallax::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    #feature-list li {
+      margin-right: 1vw;
+      margin-bottom: 2vw;
+      padding: 1vw 1vw;
+      font-size: 2vw;
+    }
+    .galleryText {
+      font-size: 3vw;
+    }
+    .gallery {
+      margin: 8vw auto;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+
+    }
+    .galleryItem {
+      display: grid;
+      grid-template-columns: auto auto;
+      margin: 0 auto;
+    }
+    .photo:hover{
+      background: rgba(0,0,0,0.12);
+      transform: translateX(0%) scale(1.010);
+    }
+    .photo {
+      width: 42vw;
+      height: 28vw;
+      margin: .5vw;
+    }
+    .propertyVideos {
+      top: 10px;
+    }
+    .propertyCategory {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3.4vw;
+      margin: 4vw;
+    }
+    .floorPlanImage img {
+      width: 80vw;
+    }
+    #videoPlayer {
+      width: 70vw;
+      height: 57vw;
+      margin-bottom: 13px;
+      margin-top: -33px;
+    }
+    .propertyRealtor {
+      align-items: center;
+      margin: 15vw 0;
+      width: 100%;
+    }
+    .centerTitle {
+      font-size: 5vw;
+    }
+    .leftAddress {    
+      font-size: 5vw;
+    }
+    .rightAddress p {
+      font-size: 3vw;
+    }
+    .googleMap {
+      width: 66vw;
+    }
+    .location {
+      margin: 5vw 0;
+      padding: 0 16vw;
+    }
+    .realtorDetails {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .realtor {
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      width: 100%;
+    }
+    .realtor-info {
+      display: flex;
+      margin: 1%;
+      font-size: 4vw;
+    }
+    .realtor-details {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      text-align: center;
+      margin-left: 5vw;
+    }
+    .realtor-details p {
+      padding: 1%;
+      text-align: center;
+      font-size: 2vw;
+    }
+    .realtor-img {
+      width: 25vw; 
+    }
+    .realtorImg {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .contact-form-section {
+      width: 80vw;
+      margin-top: 10vw;
+    }
+    .form-group {
+      margin: 3vw auto 10vw auto;
+    }
+    .form-group label {
+      font-size: 2vw;
+    }
+    .form-group input[type="text"] {
+      width: 50vw;
+      border-bottom: .2vw solid black;
+      font-size: 2vw;
+    }
+    .inquiryBtn {
+      font-size: 3vw;
+      width: 50vw;
+      border: .2vw solid black;
+      margin-top: 10vw;
+    }
+    .footer {
+      margin-top: 30vw;
+      padding: 2vw;
+    }
+    .footerDetails {
+      max-width: 65vw;
+      margin: 10vw auto;
+      padding-bottom: 10vw;
+    }
+    .revaLogo {
+      width: 25vw;
+    }
+    .footertext {
+      font-size: 2vw;
+      margin: 10vw;
+    }
+    .footerImage {
+      width: 30%;
+      height: 30%;
+    }
+    .socmed ul{
+      padding: 2vw;
+    }
+    .socmed li {
+       margin: 0 2vw;
+    }
+    .socmed li img {
+    width: 4vw;
+    height: 4vw;
+}
+    .custom-modal-content {
+      width: 80%;
+      height: auto;
+      position: relative;
+      top: 32vw;
+    }
+    .custom-close {
+      top: 8vw;
+      right: 4vw;
+      font-size: 8vw;
+    }
+    .custom-carousel-img {
+      width: 100px; 
+      margin: 10px;
+    }
+    .custom-prev, .custom-next {
+      top: 50%;
+      width: auto;
+      padding: 2vw 40vw;
+      margin-top: -4vw;
+      font-size: 6vw;
+      border-radius: 0 3px 3px 0;
+    }
+    .custom-prev {
+      right: 54%;
+      top: 50%;
+    }
+    .custom-next {
+      left: 54%;
+      top: 50%;
+    }
+
+    .floating-menu {
+      display: flex;
+    }
+    .sideMenuTitle {
+      position: relative;
+      right: 30px;
+    }
+    .sideMenuTitle p, .material-icons {
+      font-size: 5vw;
+    }
+    .sideMenu {
+      top: 0;
+      right: 0;
+      float: right;
+      width: 40vw;
+      height: 100vh;
+      padding: 2vw;
+      position: fixed;
+      color: #000;
+      background-color: ghostwhite;
+      z-index: 999;
+      border-left: solid 3px #000;
+      transition: transform 0.3s ease; 
+      transform: translateX(100%);
+    }
+    .sideMenu a {
+      display: flex;
+      margin-bottom: 10px;
+      color: #333;
+      text-decoration: none;
+      padding: 8px;
+      font-size: 3vw;
+      justify-content: flex-end;
+    }
+    .sideMenu i.material-icons {
+      font-size: 4vw;
+      width: 0;
+    }
+    .slideshowModal-img {
+      position: relative;
+      margin: auto 0;
+      top: 1vw;
+      padding: 0;
+      height: auto;
+      width: 80%;
+    }
+    .closeSlideshow {
+      color: #fff;
+      position: absolute;
+      top: 5vw;
+      right: 4vw;
+      font-size: 3vw;
+    }
+}
+
+/* Mobile Phones */
+  @media only screen and (min-width: 220px) and (max-width: 450px) {
+    #menu {
+      display: none;
+    }
+    h1 {
+      font-size: 8vw;
+    }
+    h2 {
+      font-size: 6vw;
+    }
+    h3 {
+      font-size: 6vw;
+    }
+    h4 {
+      font-size: 5vw;
+      margin-top: 3vw;
+      padding-left: 0;
+    }
+    .title-text {
+      font-size: 6vw;
+      padding: 0;
+      font-family: "Muli";
+    }
+    .med-text {
+      font-size: 3vw;
+      padding: 0;
+      font-weight: 700;
+    }
+    .text-center {
+      font-size: 1.5vw;
+    }
+    body {
+      width: 100%;
+      margin: 0;
+    }
+    #home {
+      width: 100%;
+    }
+    .navbar {
+      position: relative;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* background-color: white; */
+    }
+    .logo img {
+      margin-left: 5vw;
+    }
+    .addressContainer {
+      display: none;
+    }
+    .address {
+      position: relative;
+      padding: 0 1vw;
+      top: 10px;
+      left: 25px;
+    }
+    .backgroundImage{
+      display: none; 
+    }
+    .price {
+      display: none;
+    }
+    .sideContainer {
+      width: 100%;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 9;
+      height: 100vh;
+    }
+    .topPhoto {
+      position: relative;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      margin-top: 59px;
+    }
+    .homePhoto {
+      width: 100vw;
+    }
+    .priceOnMobile {
+      display: flex;
+      margin: 2vw 0;
+    }
+    .blankSection {
+      display: none;
+    }
+    .sideSection {
+      width: 100%;
+      /* background-color: white; */
+      position: relative;
+      right: 0;
+    }
+    #details {
+      justify-content: flex-start;
+      padding: 2vw 0 6vw 0;
+      grid-gap: 2vw;
+    }
+    #details-menu {
+      display: flex;
+      grid-gap: 10px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .detail-item .material-icons {
+      display: none;
+    }
+    .propertyAddress {
+      justify-content: flex-start;
+      display: flex;
+      font-size: 7vw;
+    }
+    #propertyDescription {
+      justify-content: center;
+    }
+    #propertyDescriptionBottom {
+      justify-content: center;
+    }
+    .description {
+      width: 100%;
+      font-size: 4vw;
+      padding: 5vw;
+      text-align: justify;
+    } 
+    #features {
+      width: 100%;
+      padding: 5vw;
+    }
+    #feature-title {
+      font-size: 7vw;
+      text-align: center;
+    }
+    #feature-list {      
+      grid-template-columns: auto;
+    }
+    #feature-list li {
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+    padding: 1vw 1vw;
+    font-size: 4vw;
+    }
+    .parallax {
+      width: 100%;
+    }
+    .parallax::before {
+      width: 100vw;
+      height: 100%;
+    }
+    .galleryText {
+      font-size: 5vw;
+    }
+    .gallery {
+      margin: 8vw auto;
+      width: 80%;
+    }
+    .galleryItem {
+      grid-template-columns: auto;
+    }
+    .photo:hover{
+      background: rgba(0,0,0,0.12);
+      transform: translateX(0%) scale(1.010);
+    }
+    .photo {
+      width: 80vw;
+      height: 53vw;
+
+    }
+    .propertyVideos {
+      top: 10px;
+    }
+    .propertyCategory {
+      font-size: 5vw;
+    }
+    .floorPlanImage img {
+      width: 80vw;
+    }
+    #videoPlayer {
+      width: 80vw;
+    }
+    .propertyRealtor {
+      align-items: center;
+      margin: 15vw 0;
+      width: 100%;
+    }
+    .centerTitle {
+      font-size: 7vw;
+    }
+    .googleMap {
+      width: 80%;
+    }
+    .leftAddress {    
+      font-size: 7vw;
+      text-align: left;
+    }
+    .rightAddress p {
+      font-size: 3.5vw;
+      margin-bottom: 0;
+      text-align: right;
+    }
+    .realtorDetails {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .realtor {
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      width: 100%;
+    }
+    .realtor-info {
+      display: flex;
+      margin: 1%;
+      font-size: 4vw;
+    }
+    .realtor-details {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      text-align: center;
+      margin-left: 5vw;
+    }
+    .realtor-details p {
+      padding: 1%;
+      text-align: center;
+      font-size: 4vw;
+    }
+    .realtor-img {
+      width: 35vw; 
+    }
+    .realtorImg {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .contact-form-section {
+      width: 80vw;
+      margin-top: 10vw;
+    }
+    .location {
+      text-transform: uppercase;
+      margin: 12vw 0;
+      padding: 0 10vw;
+    }
+    .form-group {
+      margin: 10vw auto 18vw auto;
+    }
+    .form-group label {
+      font-size: 2vw;
+    }
+    .form-group input[type="text"] {
+      width: 70vw;
+      border-bottom: .2vw solid black;
+      font-size: 4vw;
+    }
+    .inquiryBtn {
+      font-size: 5vw;
+      width: 50vw;
+      border: .2vw solid black;
+      margin-top: 10vw;
+    }
+    .footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100vw;
+      padding: 4vw;
+      margin-top: 50vw;
+    }
+    .footerDetails {
+      max-width: 65vw;
+      margin: 10vw auto;
+      padding-bottom: 10vw;
+    }
+    .revaLogo {
+      width: 35vw;
+    }
+    footer {
+      padding: 3vw 0;
+    }
+    .socmed ul{
+      margin: .5vw;
+      padding: .5vw;
+    }
+    .socmed li {
+      margin: 0 2vw;
+    }
+    .socmed li img {
+      width: 8vw;
+      height: 8vw;
+    }
+    .custom-modal-content {
+      width: 80%;
+      height: auto;
+      position: relative;
+      top: 25%;
+    }
+    .custom-close {
+      right: 5vw;
+      font-size: 10vw;
+    }
+    .custom-carousel-img {
+      width: 100px; 
+      margin: 10px;
+    }
+    .custom-prev, .custom-next {
+      top: 43%;
+      width: auto;
+      padding: 2vw 40vw;
+      font-size: 6vw;
+      border-radius: 0 3px 3px 0;
+    }
+    .custom-prev {
+      right: 52vw;
+    }
+    .custom-next {
+      left: 52vw;
+    }
+
+    .slideshowModal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+    .slideshow-modal-content {
+      margin: auto;
+      display: block;
+      height: 100%;
+    }
+    .slideshowModal-img {
+      position: relative;
+      margin: auto 0;
+      top: 1vw;
+      padding: 0;
+      height: auto;
+      width: 80%;
+    }
+    .closeSlideshow {
+      color: #fff;
+      position: absolute;
+      top: 10vw;
+      right: 8vw;
+      font-size: 8vw;
+      transition: 0.3s;
+    }
+    .closeSlideshow:hover,
+    .closeSlideshow:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .mySlides {
+      margin-top: 50vw;
+    }
+    .prev, .next {
+      position: fixed;
+      top: 50%;
+      margin-top: -4vw auto;
+      padding: 0 12vw;
+      color: white;
+      font-weight: bold;
+      font-size: 5vw;
+      cursor: pointer;
+      user-select: none;
+    }
+    .prev {
+      right: 82vw;
+      top: 50%;
+    }
+    .next {
+      left: 82vw;
+      top: 50%;
+    }
+
+    .floating-menu {
+      display: flex;
+      position: fixed;
+      right: 1vw;
+    }
+    .sideMenuTitle p, .material-icons {
+      font-size: 8vw;
+    }
+    .sideMenu {
+      top: 0;
+      right: 0;
+      float: right;
+      width: 50vw;
+      height: 100vh;
+      padding: 1vw;
+      position: fixed;
+      color: #000;
+      background-color: ghostwhite;
+      z-index: 999;
+      border-left: solid 1px #000;
+      transition: transform 0.3s ease; 
+      transform: translateX(100%);
+    }
+    .sideMenuTitle {
+      display: flex;
+      position: relative;
+      right: 30px;
+    }
+    .sideMenu a {
+      display: flex;
+      margin-bottom: 10px;
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 5vw;
+      justify-content: flex-end;
+    }
+    .sideMenu i.material-icons {
+      font-size: 5vw;
+      margin: 5vw;
+    }
+}
+  </style>
+
+</head>
+<body>
+
+  <section id="home">
+    <div id="home">
+      <div class="logo">
+        <img src="https://revastaff.com/wp-content/uploads/2024/03/site_logo.png" alt="Revastaff">          
+      </div>
+        <div class="navbar">
+          <div class="price">$5,650,000</div>
+          <div id="menu">
+            
+              <a href="#1" id="menu1">Overview</a>
+            
+              <a href="#2" id="menu2">Features</a>
+            
+              <a href="#3" id="menu3">Photos</a>
+            
+              <a href="#4" id="menu4">Video</a>
+            
+              <a href="#5" id="menu5">3D Tour</a>
+            
+              <a href="#6" id="menu6">Floor Plans</a>
+            
+              <a href="#7" id="menu7">Map</a>
+            
+              <a href="#8" id="menu8">Contact</a>
+            
+              <a href="#9" id="menu9">Social</a>
+            
+          </div>
+
+          <div class="floating-menu">
+            <div class="sideMenuTitle" id="toggleMenu">        
+              <i class="material-icons">segment</i>
+            </div>
+          </div>
+          <div class="sideMenu" id="sideMenu">
+              <div id="closeMenu"><i class="material-icons">close</i></div>
+              
+                <a href="#1" class="scroll-link" id="menu1">Overview</a>
+              
+                <a href="#2" class="scroll-link" id="menu2">Features</a>
+              
+                <a href="#3" class="scroll-link" id="menu3">Photos</a>
+              
+                <a href="#4" class="scroll-link" id="menu4">Video</a>
+              
+                <a href="#5" class="scroll-link" id="menu5">3D Tour</a>
+              
+                <a href="#6" class="scroll-link" id="menu6">Floor Plans</a>
+              
+                <a href="#7" class="scroll-link" id="menu7">Map</a>
+              
+                <a href="#8" class="scroll-link" id="menu8">Contact</a>
+              
+                <a href="#9" class="scroll-link" id="menu9">Social</a>
+              
+                <a href="#0" id="home">Back to Top</a>
+          </div>
+
+        </div>
+        <div class="addressContainer">
+          <div class="address"><h2>Dy House, Pristina</h2></div>
+        </div>
+        <div class="backgroundImage"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sideContainer">
+    <div class="blankSection"></div>
+    <div class="sideSection">
+      <section id ="0">
+        <div class="topPhoto">
+          <img class="homePhoto" src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2801%20Of%20%20%20%2032%29.JPG" class="modalImages">
+        </div>
+      </section>
+      <section id="1">
+        <div id="description">
+          <div id="propertyDescription">
+            <div class="description">
+              <h5>North, Cebu</h5>
+              <div class="propertyAddress" >Dy House, Pristina</div>
+              <div class="priceOnMobile">$5,650,000</div>
+                <section id="offered">
+                  <div id="details">
+                    <div id="details-menu">
+                      
+                        <div class="detail-item">
+                          <p class="med-text"><i class="material-icons">king_bed</i>
+                            4 Beds </p>
+                        </div>
+                      
+                        <div class="detail-item">
+                          <p class="med-text"><i class="material-icons">bathtub</i>
+                            6 Baths </p>
+                        </div>
+                      
+                        <div class="detail-item">
+                          <p class="med-text"><i class="material-icons">view_quilt</i>
+                            4,900 sqft </p>
+                        </div>
+                      
+                        <div class="detail-item">
+                          <p class="med-text"><i class="material-icons">layers</i>
+                            12,500 sf </p>
+                        </div>
+                      
+                    </div>
+                  </div>  
+                </section>
+                  <p>Introducing Dy House, Pristina, a stunning property located in the desirable city of Scarsdale, NY. This exquisite home boasts an impressive 4 bedrooms and 6 bathrooms, providing ample space for comfortable living. With its generous size of 4,900 square feet and situated on a sizable 12,500 square foot lot, this residence offers both luxury and room to roam. As you step inside this remarkable abode, you'll immediately notice the attention to detail and high-quality finishes throughout. The gleaming hardwood floors create an elegant ambiance that flows seamlessly from room to room. Oversized windows flood the interior with natural light, illuminating every corner of this beautiful home.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="showcase-tabs-wrapper text-center">
+          <a href="#" tabindex="0" role="button" tab-data="4" class="propertyCategory showcase-tab active">Video</a>
+          <a href="#" tabindex="0" role="button" tab-data="5" class="propertyCategory showcase-tab">3D Tour</a>
+          <a href="#" tabindex="0" role="button" tab-data="6" class="propertyCategory showcase-tab">Floor Plans</a>
+        </div>  
+    
+        <div id="4" class="showcase-content">
+          <section id="4">
+            <div class="propertyVideos">
+              <div class="propertyMedia">
+                
+                  <div class="propertyCategory">
+                    <div class="videoPlayer">
+                      
+                        <video controls id="videoPlayer" data-video-url="https://videos.pexels.com/video-files/7578555/7578555-sd_640_360_30fps.mp4">
+                          <source src="https://videos.pexels.com/video-files/7578555/7578555-sd_640_360_30fps.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      
+                        <video controls id="videoPlayer" data-video-url="https://videos.pexels.com/video-files/5744424/5744424-sd_640_360_30fps.mp4">
+                          <source src="https://videos.pexels.com/video-files/5744424/5744424-sd_640_360_30fps.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </section>
+        </div>
+    
+        <div id="5" class="showcase-content" style="display: none;">
+          <section id="5">
+            <div class="propertyVideos">
+              <div class="propertyMedia">
+                
+                  <div class="propertyCategory">
+                    <div class="videoPlayer">
+                      
+                        <iframe src="https://rt360.s3.amazonaws.com/mallorca/index.html" id="videoPlayer" width="1000" height="500" style="border:0;" allowfullscreen="" loading="async" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        <div id="6" class="showcase-content" style="display: none;">
+          <section id="6">
+            <div class="propertyVideos">
+              <div class="propertyMedia">
+                
+                  <div class="propertyCategory">
+                    <div class="floorPlanImage">
+                      
+                        <img src="https://www.researchgate.net/publication/356610760/figure/fig1/AS:1095470130696234@1638191840764/Sample-floor-plan-image-with-the-specification-of-different-room-sizes-and-furniture.jpg" alt="Floor Plan">
+                      
+                        <img src="https://www.researchgate.net/publication/356610760/figure/fig1/AS:1095470130696234@1638191840764/Sample-floor-plan-image-with-the-specification-of-different-room-sizes-and-furniture.jpg" alt="Floor Plan">
+                      
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id ="3">
+        <div id="customModal" class="custom-modal">
+          <span class="custom-close">&times;</span>
+          <img class="custom-modal-content" id="customModalImage">
+        </div>
+        <div class="galleryText" id="topPhoto">
+            <p>View All 17  Photos</p>
+        </div>
+          <div class="gallery">
+            <div class="galleryItem" id="">
+              
+              
+              <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2801%20Of%20%20%20%2032%29.JPG">
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2801%20Of%20%20%20%2032%29.JPG" alt="Modal Trigger Image" class="photo">
+              </a>
+              
+              
+              
+              <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2802%20Of%20%20%20%2032%29.JPG">
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2802%20Of%20%20%20%2032%29.JPG" alt="Modal Trigger Image" class="photo">
+              </a>
+              
+              
+              
+              <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2803%20Of%20%20%20%2032%29.JPG">
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2803%20Of%20%20%20%2032%29.JPG" alt="Modal Trigger Image" class="photo">
+              </a>
+              
+              
+              
+              <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2804%20Of%20%20%20%2032%29.JPG">
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2804%20Of%20%20%20%2032%29.JPG" alt="Modal Trigger Image" class="photo">
+              </a>
+              
+              
+              
+              <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2805%20Of%20%20%20%2032%29.JPG">
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2805%20Of%20%20%20%2032%29.JPG" alt="Modal Trigger Image" class="photo">
+              </a>
+              
+              
+              
+              <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2806%20Of%20%20%20%2032%29.JPG">
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2806%20Of%20%20%20%2032%29.JPG" alt="Modal Trigger Image" class="photo">
+              </a>
+              
+              
+              
+              <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2807%20Of%20%20%20%2032%29.JPG">
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2807%20Of%20%20%20%2032%29.JPG" alt="Modal Trigger Image" class="photo">
+              </a>
+              
+              
+              
+              <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2808%20Of%20%20%20%2032%29.JPG">
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2808%20Of%20%20%20%2032%29.JPG" alt="Modal Trigger Image" class="photo">
+              </a>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            </div>
+          </div> 
+      </section>
+    
+      <section id="2">
+        <div id="propertyDescriptionBottom">
+          <div id="features">
+            <div id="feature-title">Features</div>
+            <div id="feature-list">
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features1">Community Clubhouse</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features2">City Lights View</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features3">Beach Access</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features4">Gated Community</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features5">Great Schools</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features6">Hardwood Floors</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features7">Community Pool</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features8">Frameless Glass Showers</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features9">Heated Floors</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features10">Heated Pool</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features11">Ocean Views</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features12">New Construction</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features13">Large Lot</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features14">Large Kitchen</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features15">Oversized Windows</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features16">Pool</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features17">Shopping Nearby</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features18">Walk-In Closets</li>
+              </ul>
+              
+              <ul class="property-feature-list">
+                <li href="#" id="features19">Stainless Steel Appliances</li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="parallax">
+          <div class="parallax-card">
+            <h1>Dy House, Pristina <h1>
+            <h3>North, Cebu</h3>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="propertyRealtor">
+          <p class="centerTitle">Presented By</p>
+          <div class="realtorDetails">
+            
+            <div class="realtor">
+              <div class="realtorImg">
+                <img src="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg" alt="Modal Trigger Image" class="realtor-img">
+              </div> 
+              <div class="realtor-details">
+                <h4>John Green</h4>
+                <p>Lead Broker</p>
+                <p>Lataffa</p>
+                <p>(949) 555-6666</p>
+                <p><a href="mailto:johngreen@gmail.com">johngreen@gmail.com</a></p>
+                <p><a href="www.lataffa.com">www.lataffa.com</a></p>
+                <p>CalRE# 123456</p>
+              </div>
+            </div>
+            
+            <div class="realtor">
+              <div class="realtorImg">
+                <img src="https://t3.ftcdn.net/jpg/03/38/30/80/360_F_338308078_iiXC8b9lxpxmjGKaKu4dtXHSIVfzE8qm.webp" alt="Modal Trigger Image" class="realtor-img">
+              </div> 
+              <div class="realtor-details">
+                <h4>Jonas Blue</h4>
+                <p>Broker</p>
+                <p>Lataffa</p>
+                <p>(949) 949-9499</p>
+                <p><a href="mailto:jonasblue@lataffa.com">jonasblue@lataffa.com</a></p>
+                <p><a href="www.lataffa.com">www.lataffa.com</a></p>
+                <p>DRE: 123456</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section id="7" class="google-maps-section">
+        <div class="location">
+          <div class="leftAddress">MAP</div>
+          <div class="rightAddress">
+            <p>Dy House, Pristina</p>
+            <p>North, Cebu</p>
+          </div>
+        </div>
+        <div>
+          <iframe  class="googleMap" src="https://maps.googleapis.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.5174901420005!2d123.92030167583557!3d10.380410866371744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9a27b335f8c23%3A0x259e8dd18f06a2f!2sPristina%20North%20Subdivision!5e0!3m2!1sen!2sph!4v1711357246330!5m2!1sen!2sph" width="700" height="500" frameborder="0" allowfullscreen="" loading="async" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <section id = "8">
+        <div class="contact-footer">
+          <div class="contact-form-section">
+            <div class="contactForm">
+              <div class="title-text">Get in touch</div>
+              <form id="contactForm" action="#" method="post">
+                <div class="form-group">
+                  
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name*" autocomplete="off">
+                  
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name*" autocomplete="off">
+                  
+                    <input type="text" id="email" name="email" placeholder="Email*" autocomplete="off">
+                  
+                    <input type="text" id="phone" name="phone" placeholder="Phone*" autocomplete="off">
+                  
+                    <input type="text" id="comment" name="comment" placeholder="Comment*" autocomplete="off">
+                  
+                  <div class="inquiryButton">
+                    <button class="inquiryBtn" type="submit">Send Inquiry</button>
+                </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section id="9">
+        <div class="footer">
+          <img src=https://revastaff.app/revastaff/logo/powered_by_revastaff.png class="revaLogo">
+            <!-- <div class="footertext">Copyright Lorem, Inc 2024. This website is for example purposes only. This is a fictitious listing and is not for sale. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div> -->
+        </div>
+      </section>
+    
+      <footer>                                                                                                                                                                  
+        <div  class="socmed">
+          <ul>
+            
+              <li><a href="https://www.facebook.com/REVAstaff"><img src="https://revastaff-ph.app/revastaff/logo/facebook.png"></a></li>
+            
+              <li><a href="https://twitter.com/reva_staff"><img src="https://revastaff-ph.app/revastaff/logo/twitter.png"></a></li>
+            
+              <li><a href="https://www.instagram.com/reva_staff/"><img src="https://revastaff-ph.app/revastaff/logo/instagram.png"></a></li>
+            
+              <li><a href="https://www.pinterest.com/"><img src="https://cdn-icons-png.flaticon.com/128/145/145808.png"></a></li>
+            
+              <li><a href="https://ph.linkedin.com/company/revastaff/"><img src="https://cdn-icons-png.flaticon.com/128/145/145807.png"></a></li>
+            
+              <li><a href="https://revastaff.com/"><img src="https://revastaff.app/revastaff/logo/globe.png"></a></li>
+            
+              <li><a href="https://www.youtube.com/channel/UChjeEbJREEabQ92TLtVXTEA"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png"></a></li>
+            
+              <li><a href="https://www.tiktok.com/@reva_staff"><img src="https://revastaff-ph.app/revastaff/logo/tiktok.png"></a></li>
+            
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="myModal" class="slideshowModal">
+    <span class="closeSlideshow" onclick="closeTopPhotoModal()">&times;</span>
+    <div class="slideshow-modal-content">
+      <div class="mySlides">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2801%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2802%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2803%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2804%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2805%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2806%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2807%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2808%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2809%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2810%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2811%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2812%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2813%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2814%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2815%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2816%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11748/new/Dy%20House%2C%20Pristina%20North%2C%20Cebu%20%20%20%2817%20Of%20%20%20%2032%29.JPG" class="slideshowModal-img">
+        
+      </div>
+    </div>
+    <a class="prev" onclick="topSlides(-1)">&#10094;</a>
+    <a class="next" onclick="topSlides(1)">&#10095;</a>
+  </div>
+
+<script>
+
+  //MENU
+  window.onscroll = function() {
+    scrollFunction();
+  };
+  function scrollFunction() {
+    var section2 = document.getElementById("details");
+    var floatingMenu = document.querySelector('.floating-menu');
+    if (document.body.scrollTop > section2.offsetTop || document.documentElement.scrollTop > section2.offsetTop) {
+      floatingMenu.style.transform = "translateX(0%)";
+    } else {
+      floatingMenu.style.transform = "translateX(150%)";
+    }
+  }
+
+  document.getElementById('toggleMenu').addEventListener('click', function() {
+    var sideMenu = document.getElementById('sideMenu');
+    if (sideMenu.style.transform === 'translateX(0%)') {
+      sideMenu.style.transform = 'translateX(100%)'; 
+    } else {
+      sideMenu.style.transform = 'translateX(0%)';
+    }
+  });
+
+  document.getElementById('closeMenu').addEventListener('click', function() {
+    var sideMenu = document.getElementById('sideMenu');
+    sideMenu.style.transform = 'translateX(100%)'; 
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 100,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  //PHOTO GALLERY SLIDESHOW
+  var customModal = document.getElementById('customModal');
+  var customModalImg = document.getElementById('customModalImage');
+  var customModalIndex = 0;
+
+  var customModalTriggers = document.querySelectorAll('.custom-modal-trigger');
+
+  customModalTriggers.forEach(function(trigger, index) {
+    trigger.addEventListener('click', function() {
+      var imageSrc = trigger.getAttribute('data-image');
+      customModalIndex = index;
+
+      customModal.style.display = 'block';
+      showCustomImage(imageSrc);
+    });
+  });
+
+  var customCloseBtn = document.querySelector('.custom-close');
+  customCloseBtn.addEventListener('click', function() {
+    customModal.style.display = 'none';
+  });
+
+  window.addEventListener('click', function(event) {
+    if (event.target === customModal) {
+      customModal.style.display = 'none';
+    }
+  });
+
+  function showCustomImage(src) {
+    customModalImg.src = src;
+
+    if (customModalTriggers.length > 1) {
+      var customPrevBtn = document.createElement('a');
+      customPrevBtn.className = 'custom-prev';
+      customPrevBtn.innerHTML = '&#10094;';
+      customPrevBtn.addEventListener('click', function() {
+        navigateCustomSlides(-1);
+      });
+      customModal.appendChild(customPrevBtn);
+
+      var customNextBtn = document.createElement('a');
+      customNextBtn.className = 'custom-next';
+      customNextBtn.innerHTML = '&#10095;';
+      customNextBtn.addEventListener('click', function() {
+        navigateCustomSlides(1);
+      });
+      customModal.appendChild(customNextBtn);
+    }
+  }
+
+  function navigateCustomSlides(direction) {
+    customModalIndex += direction;
+
+    if (customModalIndex >= customModalTriggers.length) {
+      customModalIndex = 0;
+    } else if (customModalIndex < 0) {
+      customModalIndex = customModalTriggers.length - 1;
+    }
+    var newImageSrc = customModalTriggers[customModalIndex].getAttribute('data-image');
+    showCustomImage(newImageSrc);
+  }
+
+  //VIEW ALL PHOTOS
+  document.addEventListener('DOMContentLoaded', function() {
+    const topPhotos = document.querySelectorAll('[id^="topPhoto"]');
+    
+    topPhotos.forEach(function(topPhoto) {
+        topPhoto.addEventListener('click', function() {
+            const topPhotoModal = document.getElementById('myModal');
+            if (topPhotoModal) {
+                topPhotoModal.style.display = 'block';
+            } else {
+                console.log("Modal element not found");
+            }
+        });
+    });
+  });
+
+  function closeTopPhotoModal() {
+    const topPhotoModal = document.getElementById('myModal');
+    topPhotoModal.style.display = 'none';
+  }
+
+  var topSlideIndex = 1;
+  showTopSlide(topSlideIndex);
+
+  function topSlides(n) {
+    showTopSlide(topSlideIndex += n);
+  }
+
+  function presentSlide(n) {
+    showTopSlide(topSlideIndex = n);
+  }
+
+  function showTopSlide(n) {
+    var i;
+    var slideTop = document.getElementsByClassName("mySlides")[0].getElementsByTagName("img");
+    if (n > slideTop.length) { topSlideIndex = 1; }
+    if (n < 1) { topSlideIndex = slideTop.length; }
+    for (i = 0; i < slideTop.length; i++) {
+      slideTop[i].style.display = "none";
+    }
+    slideTop[topSlideIndex - 1].style.display = "block";
+  }
+
+  // HOME IMAGES
+  setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+  }, 9000); 
+  const images = document.querySelectorAll('.slideshow img');
+    let currentIndex = 0;
+    function showImage(index) {
+      images.forEach((image, i) => {
+        if (i === index) {
+            image.classList.add('active');
+        } else {
+            image.classList.remove('active');
+        }
+    });
+  }
+  setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+  }, 9000);
+
+  function playVideo(element) {
+    var videoPlayer = element.closest('.propertyCategory').querySelector('video');
+    var source = videoPlayer.querySelector('source');
+    var videoUrl = element.dataset.videoUrl;
+    console.log('Clicked video title:', element.innerText);
+    if (videoUrl) {
+      console.log('Video URL:', videoUrl);
+      videoPlayer.pause();
+      videoPlayer.currentTime = 0;
+      videoPlayer.addEventListener('canplay', function onCanPlay() {
+        videoPlayer.removeEventListener('canplay', onCanPlay);
+        videoPlayer.play();
+      });
+      source.src = videoUrl;
+      videoPlayer.load();
+    } else {
+      console.error('Error: Video URL is undefined.');
+    }
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 100,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const tabs = document.querySelectorAll('.showcase-tab');
+    const contents = document.querySelectorAll('.showcase-content');
+    const menuItems = document.querySelectorAll('#menu a');
+    const sideMenuItems = document.querySelectorAll('#sideMenu a');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+            e.preventDefault();
+            activateTab(this.getAttribute('tab-data'));
+        });
+    });
+
+    menuItems.forEach(menuItem => {
+      menuItem.addEventListener('click', function(e) {
+          e.preventDefault();
+          const sectionId = this.getAttribute('href');
+          activateTab(sectionId.substring(1));
+          document.getElementById(sectionId.substring(1)).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    sideMenuItems.forEach(sideMenuItem => {
+      sideMenuItem.addEventListener('click', function(e) {
+          e.preventDefault();
+          const sectionId = this.getAttribute('href');
+          activateTab(sectionId.substring(1));
+          document.getElementById(sectionId.substring(1)).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    function activateTab(tabId) {
+        tabs.forEach(tab => {
+            if (tab.getAttribute('tab-data') === tabId) {
+                tab.classList.add('active');
+            } else {
+                tab.classList.remove('active');
+            }
+        });
+
+        contents.forEach(content => {
+            if (content.id === tabId) {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        });
+    }
+    const activeTab = document.querySelector('.showcase-tab.active');
+    if (activeTab) {
+        activateTab(activeTab.getAttribute('tab-data'));
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    function isValidEmail(email) {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    function isValidPhoneNumber(phoneNumber) {
+      var phoneRegex = /^[0-9\s+]+$/;
+      return phoneRegex.test(phoneNumber);
+    }
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+
+      var formData = {};
+
+      document.querySelectorAll('#contactForm input').forEach(function(input) {
+        formData[input.name] = input.value;
+      });
+
+      if (formData['email'] && !isValidEmail(formData['email'])) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      if (formData['phone'] && !isValidPhoneNumber(formData['phone'])) {
+        alert('Please enter a valid phone number.');
+        return;
+      }
+
+      console.log(JSON.stringify(formData, null, 2));
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', handleFormSubmit);
+  });
+  </script>
+</body>
+</html>

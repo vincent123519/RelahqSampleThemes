@@ -1,0 +1,2840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 Stonehouse Rd</title>  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    h1 {
+      font-size: 6vw;
+    }
+    h2 {
+      font-size: 2vw;
+    }
+    h3 {
+      font-size: 2vw;
+      margin-bottom: 20px;
+    }
+    h4 {
+      font-size: 1vw;
+      padding-left: 2vw;
+      /* color: black; */
+      text-transform: uppercase;
+    }
+    .title-textt {
+      font-size: 55px;
+      padding: 0;
+      margin: 0;
+    }
+    .title-text {
+      font-size: 2vw;
+      margin: 0;
+      font-family: "Lora";
+      text-align: center;
+      text-transform: uppercase;
+      color: black;
+    }
+    .feature-text {
+      font-size: 1.5vw;
+      font-family: "Lora";
+    }
+    .address-text {
+      font-size: 2.5vw;
+      padding: 0;
+    }
+    .centerTitle {
+      font-size: 2vw;
+      font-family: "Lora";
+      padding: 0;
+      margin-bottom: 3vw;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .med-text {
+      font-size: 2.5vw;
+      padding: 0;
+    }
+    .subtext {
+      font-size: .8vw;
+      margin-top:-20px;
+      color: #6e6e6e;
+      text-align: center;
+    }
+    .galleryText {
+      font-size: 1.2vw;
+      margin-bottom: 3vw;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .text {
+      font-size: .8vw;
+      color: black;
+      margin: 0;
+    }
+    .footertext {
+      font-size: .8vw;
+      margin: 1vw 10vw;
+      padding-bottom: 4vw;
+    }
+    .text-center {
+      font-size: 1vw;
+      color: black;
+      text-align: center;
+      margin: 0;
+    }
+    .text-right {
+      font-size: 1vw;
+      color: black;
+      text-align: right;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .horizontal-lines {
+      position: relative;
+      left: 10%;
+      width: 80%; 
+      height: 1px; 
+      margin: 2vw 0;
+      background-color: #aeacac;
+    }
+    .prev:hover, .next:hover, .prev-buttons:hover, .next-buttons:hover, .custom-prev:hover, .custom-next:hover{
+      color: white;
+      text-decoration: none;
+    } 
+    .prev:active, .next:active, .prev-buttons:active, .next-buttons:active, .custom-prev:active, .custom-next:active{
+      color: white;
+      text-decoration: none;
+    } 
+    body {
+      font-family: "Lora";
+      margin: 0;
+      padding: 0;
+      background-color: #fefcfb;
+    }
+    #home {
+      position: relative;
+    }
+    #homeVideoPlayer {
+      width: 100%;
+    }
+    .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    grid-gap: 50px;
+    padding: 0;
+    height: 82px;
+    width: 100%;
+    background: white;
+    color: black;
+    z-index: 99;
+    /* box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.14); */
+}
+    .title {
+      color: black;
+      font-size: 1.2vw;
+      position: relative;
+      left: 25px;
+    }
+    .requests {
+      font-size: 1.2vw;
+      position: relative;
+      right: 65px;
+      top: 10px;
+      color: white;
+
+    }
+    .requests:hover {
+      color: black;
+      text-decoration: none;
+    }
+    .homevideo {
+      position: absolute;
+      width: 100%;
+      margin: auto;
+    }
+    #menu {
+      position: relative;
+      top: 10px;
+    }
+    #menu a {
+    color: black;
+    text-decoration: none;
+    padding: 0 .4vw;
+    font-size: 1vw;
+}
+    .address {
+    position: relative;
+    top: 9px;
+    left: 329px;
+    color: black;
+}
+    .price {
+      font-size: 3vw;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0 15px;
+    }
+    #details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      margin: 6vw;
+      padding: 1vw;
+      background-color: #084887;
+      color: white;
+      border-radius: 25px;
+      box-shadow: 8px 18px 30px -10px rgba(0,0,0,0.25);
+    }
+    #details-menu {
+      /* width: 50%; */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 2vw;
+    }
+    .detail-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-right: 2vw;
+    }
+    .detail-item .material-icons {
+      font-size: 2vw;
+    }
+    #description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .propertyAddress {
+      font-size: 3vw;
+      margin-bottom: 5vw;
+      font-family: "Lora";
+      text-transform: uppercase;
+    }
+    #propertyDescription {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: space-evenly;
+      grid-gap: 20px;
+      margin: 6vw;
+    }
+    #propertyDescriptionBottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      grid-gap: 20px;
+      margin: 6vw;
+    }
+    .description {
+      width: 50%;
+      line-height: 1.5;
+      font-size: 1vw;
+      letter-spacing: 2px;
+      padding: 2%;
+    }
+    .photoGrid {
+      display: grid;
+      box-shadow: 8px 18px 30px -10px rgba(0,0,0,0.25);
+    }
+    .gridItem {
+      display: flex;
+      flex-direction: row;
+    }
+    .modalImages {
+      width: 38vw;
+      border-radius: 25px;
+      background-color: transparent;
+      box-shadow: 8px 18px 30px -10px rgba(0,0,0,0.25);
+
+      /* height: 22vw; */
+    }
+    .modalImagesBottom{
+      width: 15vw;
+      /* height: 15vw; */
+    }
+    .modalImages:hover{
+      background: rgba(0,0,0,0.12);
+      transform: translateX(0%) scale(1.010);
+    }
+    .modalImagesBottom:hover{
+      background-color: rgba(0,0,0,0.12);
+      transform: translateX(0%) scale(1.010);
+    }
+    .topPhoto,
+    .bottomPhoto{
+      margin: 20px;
+    }
+    /* #features {
+      width: 44vw;
+    } */
+    #feature-title {
+      /* display: flex;
+      align-items: center;
+      justify-content: flex-start; */
+      font-size: 3vw;
+      font-family: "Lora";
+      text-transform: uppercase;
+    }
+    #feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      align-content: center;
+      justify-content: flex-start;    
+      margin-top: 2vw;
+      width: 40vw;
+    }
+    #feature-list a {
+      margin-right: 1vw; 
+      margin-bottom: 1vw;
+      padding: .8vw .8vw;
+      font-size: 1vw;
+      background-color: #084887; 
+      color: white; 
+      text-decoration: none;
+      transition: background-color 0.3s;
+      border-radius: 25px;
+      /* box-shadow: 8px 18px 30px -10px rgba(0,0,0,0.25); */
+      /* border: 1px solid black; */
+    }
+    #feature-list :hover {
+      background-color: #E3E3E3; 
+      color: black; 
+      transform: scaleX(1.02);
+      transform-origin: center;
+    }
+    .parallax {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(180deg,rgba(0, 0, 0, 0.644) 20%,rgba(255,255,255,0) 100%);
+      background-image: url("https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2810%20of%2058%29.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      position: relative;
+    }
+    .parallax::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); 
+    }
+    .parallax-card {
+      padding: 20px;
+      border-radius: 10px;
+      position: relative; 
+      z-index: 1; 
+      color: white;
+    }
+    .gallery {
+      display: flex;
+      margin: 2vw auto;
+      width: 72vw;
+      box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.81);
+      -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.81);
+      -moz-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.81);
+    }
+    .galleryItem {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      margin: 0 auto;
+    }
+    .photo:hover{
+      background: rgba(0,0,0,0.12);
+      transform: translateX(0%) scale(1.010);
+    }
+    .photo {
+      width: 18vw;
+      height: 12vw;
+      object-fit: cover;
+      /* height: 15vw; */
+    }
+    .propertyVideos {
+      display: flex;
+      flex-direction: column;
+      top: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    .propertyMedia {
+      display: flex;
+      flex-direction: column;
+    }
+    .showcase-tabs-wrapper {
+      font-family: 'Lora';
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 2vw;
+      margin: 6vw 6vw 2vw 6vw;
+    }
+    .showcase-tabs-wrapper a {
+      text-decoration: none;
+      color: black;
+    }
+    .showcase-tabs-wrapper a:hover {
+      text-decoration: underline;
+    }
+    .showcase-tabs-wrapper a:active {
+      text-decoration: underline;
+    }
+    .propertyCategory {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2.5vw;
+      margin: 1vw;
+    }
+    .floorPlanImage img {
+      /* display: flex;
+      flex-wrap: wrap; */
+      width: 25vw;
+      /* margin: 5vw; */
+    }
+    .videoPlayer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0% 2% 4% 2%;
+    }
+    #videoPlayer {
+      width: 60vw;
+      margin-top: 2vw;
+      border-radius: 25px;
+    }
+    .propertyRealtor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 4vw;
+    }
+    .realtorDetails {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+    .realtor {
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      margin-bottom: 5vw;
+    }
+    .realtor-info {
+      margin: 1%;
+      font-size: 2vw;
+    }
+    .realtor-details p{
+      margin: 0;
+      padding-left: 2vw;
+      font-size: .9vw;
+    }
+    .realtor-img {
+      width: 8vw; 
+      box-shadow: 8px 18px 30px -10px rgba(0,0,0,0.25);
+      border-radius: 15px;
+    }
+    .realtorImg {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .google-maps-section {
+      text-align: center;
+      margin: 6vw;
+    }
+    .location {
+      text-transform: uppercase;
+    }
+    .leftAddress {    
+      font-size: 3vw;
+      margin: 2vw;
+    }
+    .rightAddress p {
+      font-size: 1.5vw;
+      margin-bottom: 0;
+      text-align: justify;
+    }
+    .googleMap {
+      width: 75%;
+      height: 60vh;
+      border: 0;
+      border-radius: 25px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      /* margin: 6vw; */
+      background-color:  #084887;
+      color: white;
+    }
+    .contact-form-section {
+      /* margin: 0 auto; */
+      padding: 1vw;
+      text-align: center;
+      background-color: #f9f9f9;
+      margin: 4vw 0;
+      width: 30vw;
+      border-radius: 25px;
+    }
+    .contactForm {
+      margin: 3vw 0;
+    }
+    .form-group {
+      max-width: 45vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      margin: 3vw auto 3vw auto;
+    }
+    .form-group input[type="text"] {
+      border: none; 
+      /* border-radius: 15px; */
+      border-bottom: .1vw solid black; 
+      padding: 1vw; 
+      margin-bottom: 1vw; 
+      width: 25vw; 
+      box-sizing: border-box;
+      outline: none;
+      font-size: 1vw;
+      background-color: transparent;
+    }
+    .form-group label {
+      text-align: left;
+      font-size: 1vw;
+      color: #9E9F9F;
+      margin: 0;
+    }
+    .inquiryButton {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .inquiryBtn {
+      padding: .5vw;
+      text-align: center;
+      margin: .5vw;
+      width: 15vw;
+      font-size: 1vw;
+      background-color: #084887;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      /* border: .1vw solid black; */
+    }
+    .inquiryBtn:hover {
+      background-color: black;
+      color: white;
+    }
+    .footer {
+      padding: 5vw 0 1vw 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .footerDetails {
+      max-width: 65vw;
+    }
+    .revaLogo {
+      width: 12vw;
+    }
+    footer {
+      background-color: #084887;
+      color: white;
+      text-align: center;
+      padding: .5vw 0;
+      width: 100%;
+      /* position: fixed; */
+      bottom: 0;
+      left: 0;
+      z-index: 1100;
+      cursor: pointer;
+    }
+    .socmed ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .socmed li {
+      margin: 0.5vw 1vw;
+    }
+    .socmed li img {
+      width: 1.5vw;
+      height: 1.5vw;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    input {
+      height: 5vh;
+      width: 90%;
+    }
+    .floating-menu {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      top: 5vw;
+      right: 1vw;
+      background-color: #fff;
+      width: 7vw;
+      padding: .5vw;
+      box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease; 
+      transform: translateX(120%);
+    }
+    .sideMenuTitle {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-around;
+      color: #000;
+    }
+    .sideMenuTitle p, .material-icons {
+      font-size: 1vw;
+      margin: 0 auto;
+    }
+    .sideMenu {
+      top: 0;
+      right: 0;
+      float: right;
+      width: 15vw;
+      height: 100vh;
+      padding: 1vw;
+      position: fixed;
+      color: #000;
+      background-color: #fff;
+      z-index: 999;
+      border-left: solid 3px #000;
+      transition: transform 0.3s ease; 
+      transform: translateX(100%);
+    }
+    .sideMenu a {
+      display: flex;
+      margin-bottom: 10px;
+      color: #333;
+      text-decoration: none;
+      padding: 5px;
+      font-size: 1.5vw;
+      justify-content: flex-end;
+    }
+    .sideMenu i.material-icons {
+      font-size: 2vw;
+      width: 0;
+    }
+    .slideshowModal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+    .slideshow-modal-content {
+      margin: auto;
+      display: block;
+      height: 100%;
+    }
+    .slideshowModal-img {
+      /* width: 70%; */
+      position: relative;
+      margin: auto 0;
+      top: 1vw;
+      padding: 0;
+      height: 80vh;
+
+      /* width: 52vw; 
+      position: fixed;
+      left: 24vw;
+      top: 4vw; */
+    }
+    .closeSlideshow {
+      color: #fff;
+      position: absolute;
+      top: 0;
+      right: 2vw;
+      font-size: 3vw;
+      transition: 0.3s;
+    }
+    .closeSlideshow:hover,
+    .closeSlideshow:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .mySlides {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .prev, .next {
+      position: fixed;
+      top: 50%;
+      margin-top: -4vw auto;
+      padding: 0 12vw;
+      color: white;
+      font-weight: bold;
+      font-size: 3vw;
+      cursor: pointer;
+      user-select: none;
+    }
+    .prev {
+      right: 82vw;
+      top: 50%;
+    }
+    .next {
+      left: 82vw;
+      top: 50%;
+    }
+    @media only screen and (max-width: 700px) {
+      .slideshow-modal-content {
+        width: 100%;
+      }
+    }
+    .slideshowModals {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+    .slideshowModal-contents {
+      width: 100vw; 
+    }
+    .slideshowModal-images {
+      width: 52vw;
+      position: fixed;
+      left: 24vw;
+      top: 4vw;
+    }
+    .slideshow-close-buttons {
+      color: #fff;
+      position: absolute;
+      top: 1vw;
+      right: 5vw;
+      font-size: 3vw;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .slideshow-close-buttons:hover,
+    .slideshow-close-buttons:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .prev-buttons, .next-buttons {
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -4vw;
+      padding: 2vw 0vw;
+      color: white;
+      font-weight: bold;
+      font-size: 3vw;
+      cursor: pointer;
+      user-select: none;
+    }
+    .prev-buttons {
+      right: 82vw;
+      top: 20vw;
+    }
+    .next-buttons {
+      left: 82vw;
+      top: 20vw;
+    }
+    @media only screen and (max-width: 700px) {
+      .slideshow-modal-contents {
+        width: 100%;
+      }
+    }
+    .custom-modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      /* overflow: auto; */
+      background-color: black;
+      background-color: black;
+    }
+    .custom-modal-content {
+      margin: auto;
+      display: block;
+      height: 80vh;
+      /* width: 52vw; */
+      /* position: fixed;
+      top: 4vw;
+      left: 24vw; */
+    }
+    .custom-close {
+      position: absolute;
+      top: 0;
+      right: 2vw;
+      color: #f1f1f1;
+      font-size: 4vw;
+      cursor: pointer;
+    }
+    .custom-carousel-img {
+      width: 100px; 
+      height: auto;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .custom-prev, .custom-next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 2vw 20vw;
+      margin-top: -4vw;
+      color: white;
+      font-weight: bold;
+      font-size: 3vw;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+    .custom-prev {
+      right: 75vw;
+      top: 20vw;
+    }
+    .custom-next {
+      left: 75vw;
+      top: 20vw;
+    }
+    #share-buttons {
+      position: fixed;
+      cursor: pointer;
+      bottom: 35%; 
+      left: 0;
+      transition: transform 0.3s ease; 
+      transform: translateY(50%);
+    }
+    #share-buttons li {
+      display: flex;
+      background-color: white;
+    }
+    #share-buttons img {
+      width: 2vw;
+      margin: .4vw;
+    }
+    #share-buttons li:hover {
+      animation: transition ease-in-out 0.3s;  
+      transform: translateX(0%) scale(1); 
+      right: 0;
+      padding-left: .5vw;
+      background-color: white;
+      margin: 0;
+    }
+
+/* Ipad*/
+@media only screen and (min-device-width: 451px) and (max-device-width: 1100px) {
+    h2 {
+      font-size: 2vw;
+    }
+    h3 {
+      font-size: 3vw;
+    }
+    h4 {
+      font-size: 3vw;
+      margin-top: 3vw;
+      color: black;
+      padding-left: 0;
+    }
+    .title-text {
+      font-size: 4vw;
+      padding: 0;
+      font-family: "Lora";
+    }
+    .address-text {
+      font-size: 4vw;
+      text-align: left;
+    }
+    .subtext {
+      font-size: 2vw;
+    }
+    .med-text {
+      font-size: 5vw;
+      padding: 0;
+    }
+    .text-center {
+      font-size: 1.5vw;
+    }
+    .text {
+      font-size: 2vw;
+    }
+    body {
+      width: 100%;
+      margin: 0;
+    }
+    #home {
+      width: 100%;
+    }
+    #homeVideoPlayer {
+    width: 77vw;
+    margin-top: 83px;
+    margin-left: 221px;
+    height: 38vw;
+}
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      grid-gap: 5px;
+      z-index: 998;
+      height: 76px;
+    }
+    .title {
+      font-size: 4vw;
+      left: 30px;
+    }
+    #menu {
+    position: relative;
+    top: 6px;
+}
+    .requests {
+      font-size: 3.5vw;
+    }
+    .address {
+      color: black;
+      position: relative;
+      padding: 0 1vw;
+    }
+    .price {
+      /* background-color: black; */
+      color: white;
+      font-size: 4vw;
+      left: 16px;
+      position: relative;
+      width: fit-content;
+    }
+    #details {
+      flex-direction: column;
+      justify-content: center;
+      max-height: 100%;
+      padding: 4vw 0;
+      grid-gap: 2vw;
+    }
+    #details-menu {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+      justify-content: space-evenly;
+      justify-items: start;
+      align-items: center;
+      margin: 2vw;
+      width: 80vw;
+    }
+    .detail-item {
+      /* width: 50%; */
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .detail-item .material-icons {
+      font-size: 4vw;
+    }
+    .propertyAddress {
+      justify-content: flex-start;
+      display: flex;
+      font-size: 5vw;
+    }
+    #propertyDescription {
+      justify-content: center;
+    }
+    #propertyDescriptionBottom {
+      justify-content: center;
+    }
+    .description {
+      width: 100%;
+      font-size: 2vw;
+      padding: 5vw;
+      text-align: justify;
+    } 
+    .photoGrid {
+      display: grid;
+      box-shadow: 8px 18px 30px -10px rgba(0,0,0,0.25);
+      width: 80%;
+    }
+    .gridItem {
+      display: flex;
+      flex-direction: row;
+    }
+    .modalImages {
+      width: 100%;
+      height: auto;
+    }
+    .modalImagesBottom {
+      width: 50%;
+      height: auto;
+    }
+    .topPhoto,
+    .bottomPhoto{
+      margin: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    #features {
+      width: 100%;
+      padding: 5vw;
+    }
+    #feature-title {
+      font-size: 4vw;
+      justify-content: flex-start;
+    }
+    #feature-list {      
+      display: flex;
+      margin: 4vw auto;
+      justify-content: flex-start;
+    }
+    #feature-list a {
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+    padding: 1vw 1vw;
+    font-size: 2vw;
+    }
+    .feature-text {
+      font-size: 3vw;
+      font-family: "Lora";
+    }
+    .galleryText {
+      font-size: 3vw;
+    }
+    .gallery {
+      margin: 8vw auto;
+      width: 80%;
+    }
+    .galleryItem {
+      margin: 0 auto;
+    }
+    .photo:hover{
+      background: rgba(0,0,0,0.12);
+      transform: translateX(0%) scale(1.010);
+    }
+    .photo {
+      width: 20vw;
+      text-align: center;
+    }
+    .propertyVideos {
+      top: 10px;
+    }
+    .propertyCategory {
+      font-size: 4vw;
+    }
+    .floorPlanImage img {
+      width: 80vw;
+    }
+    #videoPlayer {
+      width: 80vw;
+    }
+    .propertyRealtor {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      max-height: 100%;
+      margin-top: 50px;
+      width: 100%;
+    }
+    .centerTitle {
+      font-size: 5vw;
+    }
+    .leftAddress {    
+      font-size: 4vw;
+    }
+    .rightAddress {
+      font-size: 2.5vw;
+    }
+    .googleMap {
+      width: 80%;
+      height: 30vh;
+    }
+    .realtorDetails {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .realtor {
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      width: 100%;
+    }
+    .realtor-info {
+      display: flex;
+      margin: 1%;
+      font-size: 4vw;
+    }
+    .realtor-details {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      text-align: center;
+      margin-left: 5vw;
+    }
+    .realtor-details p {
+      padding: 1%;
+      text-align: center;
+      font-size: 2vw;
+    }
+    .realtor-img {
+      width: 25vw; 
+    }
+    .realtorImg {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .contact-form-section {
+      width: 104%;
+      padding: 5vw;
+    }
+    .form-group label {
+      font-size: 2vw;
+    }
+    .form-group input[type="text"] {
+      width: 50vw;
+      border-bottom: .2vw solid black;
+      font-size: 2vw;
+    }
+    .inquiryBtn {
+      font-size: 3vw;
+      width: 50vw;
+      border: .2vw solid black;
+    }
+    .footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100vw;
+    }
+    .footerDetails {
+      max-width: 65vw;
+      margin: 10vw auto;
+      padding-bottom: 10vw;
+    }
+    .revaLogo {
+      width: 25vw;
+    }
+    .footertext {
+      font-size: 2vw;
+      margin: 10vw;
+    }
+    .footerImage {
+      width: 30%;
+      height: 30%;
+    }
+    .socmed ul{
+      margin: .5vw;
+      padding: .5vw;
+    }
+    .socmed li {
+      margin: 0 2vw;
+    }
+    .socmed li img {
+      width: 4vw;
+      height: 4vw;
+    }
+    .floating-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1vw;
+      position: relative;
+      background-color: transparent;
+      top: 0px;
+      right: 34px;
+      z-index: 999;
+      transition: none;
+      transform: none;
+      box-shadow: none;
+    }
+    .sideMenuTitle p, .material-icons {
+      font-size: 3.5vw;
+    }
+    .sideMenu {
+      width: 50vw;
+      padding: 2vw;
+      background-color: rgba(255, 255, 255, 0.885);
+    }
+    .sideMenu a {
+      margin-bottom: 10px;
+      padding: 5px;
+      font-size: 5vw;
+    }
+    .sideMenu i.material-icons {
+      font-size: 6vw;
+    }
+    .slideshowModal {
+      z-index: 1000;
+    }
+    .slideshowModal-img {
+      width: 80%; 
+      /* left: 14vw; */
+      top: 15vw;
+      height: 40vh;
+    }
+    .closeSlideshow {
+      top: 4vw;
+      right: 8vw;
+      font-size: 10vw;
+    }
+    .prev, .next {
+      top: 50%;
+      margin-top: -4vw auto;
+      padding: 2vw 50vw;
+      font-size: 6vw;
+    }
+    .prev {
+      right: 48vw;
+      top: 50vw;
+    }
+    .next {
+      left: 48vw;
+      top: 50vw;
+    }
+    .close i {
+      position: absolute;
+      top: 8vw;
+      right: 8vw;
+      color: rgb(255, 242, 0);
+      font-size: 8vw;
+    }
+    .slideshowModals {
+      z-index: 1000;
+    }
+    .slideshowModal-images {
+      width: 70vw;
+      left: 16vw;
+      top: 32vw;
+      position: fixed;
+    }
+    .slideshow-close-buttons {
+      top: 4vw;
+      right: 8vw;
+      font-size: 6vw;
+    }
+    .prev-buttons, .next-buttons {
+      top: 50%;
+      margin-top: -4vw auto;
+      padding: 2vw 50vw;
+      font-size: 6vw;
+    }
+    .prev-buttons {
+      right: 40vw;
+      top: 50vw;
+    }
+    .next-buttons {
+      left: 40vw;
+      top: 50vw;
+    }
+    .close i {
+      font-size: 6vw;
+    }
+    .custom-modal-content {
+      width: 80%;
+      height: auto;
+      position: relative;
+      top: 32vw;
+    }
+    .custom-close {
+      top: 8vw;
+      right: 4vw;
+      font-size: 10vw;
+    }
+    .custom-carousel-img {
+      width: 100px; 
+      margin: 10px;
+    }
+    .custom-prev, .custom-next {
+      top: 50%;
+      width: auto;
+      padding: 2vw 40vw;
+      margin-top: -4vw;
+      font-size: 6vw;
+      border-radius: 0 3px 3px 0;
+    }
+    .custom-prev {
+      right: 50vw;
+      top: 54vw;
+    }
+    .custom-next {
+      left: 50vw;
+      top: 54vw;
+    }
+    #share-buttons img {
+      width: 4vw;
+      margin: .4vw;
+    }
+}
+
+/* Mobile Phones */
+@media only screen and (min-device-width: 220px) and (max-device-width: 450px) {
+    #menu {
+      display: none;
+    }
+    h2 {
+      font-size: 2vw;
+    }
+    h3 {
+      font-size: 4vw;
+    }
+    h4 {
+      font-size: 3vw;
+      margin-top: 3vw;
+      color: black;
+      padding-left: 0;
+    }
+    .title-text {
+      font-size: 6vw;
+      padding: 0;
+      font-family: "Lora";
+    }
+    .address-text {
+      font-size: 4vw;
+      text-align: left;
+    }
+    .subtext {
+      font-size: 2vw;
+    }
+    .med-text {
+      font-size: 5vw;
+      padding: 0;
+    }
+    .text-center {
+      font-size: 1.5vw;
+    }
+    .text {
+      font-size: 2vw;
+    }
+    body {
+      width: 100%;
+      margin: 0;
+    }
+    #home {
+      width: 100%;
+    }
+    #homeVideoPlayer {
+      width: 104%;
+      margin-top: 76px;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      grid-gap: 5px;
+      z-index: 998;
+      height: 56px;
+    }
+    .title {
+      font-size: 5vw;
+      left: 18px;
+    }
+    .requests {
+      font-size: 4vw;
+    }
+    .address {
+      color: black;
+      position: relative;
+      padding: 0 1vw;
+    }
+    .price {
+      background-color: black;
+      color: white;
+      font-size: 6vw;
+      left: 16px;
+      position: relative;
+      width: fit-content;
+    }
+    #details {
+      justify-content: center;
+      max-height: 100%;
+      padding: 4vw 0 6vw 0;
+      grid-gap: 2vw;
+    }
+    #details-menu {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+      justify-content: space-evenly;
+      justify-items: start;
+      align-items: center;
+      margin: 2vw;
+
+    }
+    .detail-item .material-icons {
+      font-size: 4vw;
+    }
+    .propertyAddress {
+      justify-content: flex-start;
+      display: flex;
+      font-size: 7vw;
+    }
+    #propertyDescription {
+      justify-content: center;
+    }
+    #propertyDescriptionBottom {
+      justify-content: center;
+    }
+    .description {
+      width: 100%;
+      font-size: 4vw;
+      padding: 5vw;
+      text-align: justify;
+    } 
+    .photoGrid {
+      display: grid;
+      box-shadow: 8px 18px 30px -10px rgba(0,0,0,0.25);
+      width: 100%;
+    }
+    .gridItem {
+      display: flex;
+      flex-direction: row;
+    }
+    .modalImages {
+      width: 100%;
+      height: auto;
+
+    }
+    .modalImagesBottom {
+      width: 50%;
+      height: auto;
+    }
+    .topPhoto,
+    .bottomPhoto{
+      margin: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    #features {
+      width: 100%;
+      padding: 5vw;
+    }
+    #feature-title {
+      font-size: 7vw;
+      justify-content: flex-start;
+    }
+    #feature-list {      
+      display: flex;
+      margin: 4vw auto;
+      justify-content: flex-start;
+    }
+    #feature-list a {
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+    padding: 1vw 1vw;
+    font-size: 4vw;
+    }
+    .feature-text {
+      font-size: 5vw;
+      font-family: "Lora";
+    }
+    .galleryText {
+      font-size: 3vw;
+    }
+    .gallery {
+      margin: 8vw auto;
+      width: 80%;
+    }
+    .galleryItem {
+      grid-template-columns: auto auto;
+    }
+    .photo:hover{
+      background: rgba(0,0,0,0.12);
+      transform: translateX(0%) scale(1.010);
+    }
+    .photo {
+      width: 40vw;
+      height: 40vw;
+
+    }
+    .propertyVideos {
+      top: 10px;
+    }
+    .propertyCategory {
+      font-size: 4vw;
+    }
+    .floorPlanImage img {
+      width: 80vw;
+    }
+    #videoPlayer {
+      width: 80vw;
+    }
+    .propertyRealtor {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      max-height: 100%;
+      margin-top: 15px;
+      width: 100%;
+    }
+    .centerTitle {
+      font-size: 5vw;
+    }
+    .googleMap {
+      width: 80%;
+      height: 30vh;
+    }
+    .realtorDetails {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .realtor {
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      width: 100%;
+    }
+    .realtor-info {
+      display: flex;
+      margin: 1%;
+      font-size: 4vw;
+    }
+    .realtor-details {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      text-align: center;
+      margin-left: 5vw;
+    }
+    .realtor-details p {
+      padding: 1%;
+      text-align: center;
+      font-size: 2vw;
+    }
+    .realtor-img {
+      width: 32vw; 
+    }
+    .realtorImg {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .contact-form-section {
+      width: 104%;
+    }
+    .form-group label {
+      font-size: 2vw;
+    }
+    .form-group input[type="text"] {
+      width: 50vw;
+      border-bottom: .2vw solid black;
+      font-size: 2vw;
+    }
+    .inquiryBtn {
+      font-size: 3vw;
+      width: 50vw;
+      border: .2vw solid black;
+    }
+    .footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100vw;
+    }
+    .footerDetails {
+      max-width: 65vw;
+      margin: 10vw auto;
+      padding-bottom: 10vw;
+    }
+    .revaLogo {
+      width: 25vw;
+    }
+    .footertext {
+      font-size: 2vw;
+      margin: 10vw;
+    }
+    .socmed ul{
+      margin: .5vw;
+      padding: .5vw;
+    }
+    .socmed li {
+      margin: 0 2vw;
+    }
+    .socmed li img {
+      width: 8vw;
+      height: 8vw;
+    }
+    .floating-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1vw;
+      position: relative;
+      background-color: transparent;
+      top: 0px;
+      right: 28px;
+      z-index: 999;
+      transition: none;
+      transform: none;
+      box-shadow: none;
+    }
+    .sideMenuTitle p, .material-icons {
+      font-size: 4.5vw;
+    }
+    .sideMenu {
+      width: 100%;
+      padding: 10vw;
+      z-index: 999;
+      background-color: rgba(255, 255, 255, 0.885);
+    }
+    .sideMenu a {
+      margin-bottom: 10px;
+      padding: 5px;
+      font-size: 6vw;
+    }
+    .sideMenu i.material-icons {
+      font-size: 9vw;
+      margin-right: 6vw;
+    }
+    .slideshowModal {
+      z-index: 1000;
+    }
+    .slideshowModal-img {
+      width: 80%;
+      height: auto;
+      top: 50vw;
+    }
+    .closeSlideshow {
+      top: 4vw;
+      right: 8vw;
+      font-size: 12vw;
+    }
+    .prev, .next {
+      top:40%;
+      padding: 2vw 50vw;
+      font-size: 6vw;
+    }
+    .prev {
+      right: 48vw;
+    }
+    .next {
+      left: 48vw;
+    }
+    .close i {
+      position: absolute;
+      top: 8vw;
+      right: 8vw;
+      color: rgb(255, 242, 0);
+      font-size: 8vw;
+    }
+    .slideshowModals {
+      z-index: 1000;
+    }
+    .slideshowModal-images {
+      width: 70vw;
+      left: 16vw;
+      top: 32vw;
+      position: fixed;
+    }
+    .slideshow-close-buttons {
+      top: 4vw;
+      right: 8vw;
+      font-size: 6vw;
+    }
+    .prev-buttons, .next-buttons {
+      top: 50%;
+      margin-top: -4vw auto;
+      padding: 2vw 50vw;
+      font-size: 6vw;
+    }
+    .prev-buttons {
+      right: 40vw;
+      top: 50vw;
+    }
+    .next-buttons {
+      left: 40vw;
+      top: 50vw;
+    }
+    .close i {
+      font-size: 6vw;
+    }
+    .custom-modal-content {
+      width: 80%;
+      height: auto;
+      position: relative;
+      top: 25%;
+    }
+    .custom-close {
+      top: 4vw;
+      right: 12vw;
+      font-size: 10vw;
+    }
+    .custom-carousel-img {
+      width: 100px; 
+      margin: 10px;
+    }
+    .custom-prev, .custom-next {
+      top: 43%;
+      width: auto;
+      padding: 2vw 40vw;
+      font-size: 6vw;
+      border-radius: 0 3px 3px 0;
+    }
+    .custom-prev {
+      right: 58vw;
+    }
+    .custom-next {
+      left: 58vw;
+    }
+    #share-buttons img {
+      width: 8vw;
+      margin: .4vw;
+    }
+}
+  </style>
+
+</head>
+<body>
+
+  <section id="home">
+    <div id="home">
+      <div class="tv">
+        <div class="navbar">
+          <div class="address">
+            <h2>6 Stonehouse Rd</h2>
+          </div>
+          <div id="menu">
+            
+              <a href="#1" id="menu1">Overview</a>
+            
+              <a href="#2" id="menu2">Features</a>
+            
+              <a href="#3" id="menu3">Photos</a>
+            
+              <a href="#4" id="menu4">Video</a>
+            
+              <a href="#5" id="menu5">3D Tour</a>
+            
+              <a href="#6" id="menu6">Floor Plans</a>
+            
+              <a href="#7" id="menu7">Map</a>
+            
+              <a href="#8" id="menu8">Contact</a>
+            
+              <a href="#9" id="menu9">Social</a>
+            
+          </div>
+          <div><a href="#8" class="requests">REQUEST INFO</a>
+          </div>
+          <div class="floating-menu">
+            <div class="sideMenuTitle" id="toggleMenu">        
+              <p classs="subtext">MENU<p>
+              <i class="material-icons">segment</i>
+            </div>
+          </div>
+          <div class="sideMenu" id="sideMenu">
+              <div id="closeMenu"><i class="material-icons">close</i></div>
+              
+                <a href="#1" class="scroll-link" id="menu1">Overview</a>
+              
+                <a href="#2" class="scroll-link" id="menu2">Features</a>
+              
+                <a href="#3" class="scroll-link" id="menu3">Photos</a>
+              
+                <a href="#4" class="scroll-link" id="menu4">Video</a>
+              
+                <a href="#5" class="scroll-link" id="menu5">3D Tour</a>
+              
+                <a href="#6" class="scroll-link" id="menu6">Floor Plans</a>
+              
+                <a href="#7" class="scroll-link" id="menu7">Map</a>
+              
+                <a href="#8" class="scroll-link" id="menu8">Contact</a>
+              
+                <a href="#9" class="scroll-link" id="menu9">Social</a>
+              
+                <a href="#home" id="home">Back to Top</a>
+          </div>
+        </div>
+        <video controls autoplay loop muted id="homeVideoPlayer" data-video-url="https://videos.pexels.com/video-files/7578550/7578550-uhd_3840_2160_30fps.mp4">
+          <source src="https://videos.pexels.com/video-files/7578550/7578550-uhd_3840_2160_30fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+  <section id="1">
+    <div id="description">
+      <div id="propertyDescription">
+        <div class="description">
+          <div class="propertyAddress" >6 Stonehouse Rd</div>
+            <p>Introducing 12 Hannan Pl, a stunning property located in the desirable city of Rye, NY. This exquisite home boasts an impressive 4 bedrooms and 6 bathrooms, providing ample space for comfortable living. With its generous size of 4,900 square feet and situated on a sizable 12,500 square foot lot, this residence offers both luxury and room to roam. As you step inside this remarkable abode, you'll immediately notice the attention to detail and high-quality finishes throughout. The gleaming hardwood floors create an elegant ambiance that flows seamlessly from room to room. Oversized windows flood the interior with natural light, illuminating every corner of this beautiful home.</p>
+        </div>
+
+        <div class="topPhoto">
+            <img id="topPhoto" src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%281%20of%2058%29.jpg" class="modalImages">
+          <div id="myModal" class="slideshowModal">
+            <span class="closeSlideshow" onclick="closeTopPhotoModal()">&times;</span>
+            <div class="slideshow-modal-content">
+              <div class="mySlides">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%281%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2810%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2811%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2812%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2813%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2814%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2815%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2816%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2817%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2818%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2819%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2820%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2821%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2822%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2823%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2824%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2825%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2826%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2827%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2828%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2829%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2830%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2831%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2832%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2833%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2834%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2835%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2836%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2837%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2838%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2839%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%284%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2840%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2841%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2842%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2843%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2844%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2845%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2846%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2847%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2848%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2849%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%285%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2850%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2851%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2852%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2853%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2854%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2855%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2856%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2857%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2858%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%286%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%287%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%288%20of%2058%29.jpg" class="slideshowModal-img">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%289%20of%2058%29.jpg" class="slideshowModal-img">
+                
+              </div>
+            </div>
+            <a class="prev" onclick="topSlides(-1)">&#10094;</a>
+            <a class="next" onclick="topSlides(1)">&#10095;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="offered">
+    <div id="details">
+      <div class="price">
+        <p>$5,650,000</p>
+      </div>
+      <div id="details-menu">
+        
+          <div class="detail-item">
+            <p class="med-text"><i class="material-icons">king_bed</i>
+              4 Beds </p>
+          </div>
+        
+          <div class="detail-item">
+            <p class="med-text"><i class="material-icons">bathtub</i>
+              6 Baths </p>
+          </div>
+        
+          <div class="detail-item">
+            <p class="med-text"><i class="material-icons">view_quilt</i>
+              4,900 sqft </p>
+          </div>
+        
+          <div class="detail-item">
+            <p class="med-text"><i class="material-icons">layers</i>
+              12,500 sf </p>
+          </div>
+        
+      </div>
+    </div>  
+  </section>
+
+  <section>
+    <div class="parallax">
+      <div class="parallax-card">
+        <h1>6 Stonehouse Rd <h1>
+        <h3> NY 10583, USA</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="2">
+    <div id="propertyDescriptionBottom">
+      <div id="features">
+        <div id="feature-title">Features</div>
+        <div id="feature-list">
+          
+            <a href="#" id="features1">Community Clubhouse</a>
+          
+            <a href="#" id="features2">City Lights View</a>
+          
+            <a href="#" id="features3">Beach Access</a>
+          
+            <a href="#" id="features4">Gated Community</a>
+          
+            <a href="#" id="features5">Great Schools</a>
+          
+            <a href="#" id="features6">Hardwood Floors</a>
+          
+            <a href="#" id="features7">Community Pool</a>
+          
+            <a href="#" id="features8">Frameless Glass Showers</a>
+          
+            <a href="#" id="features9">Heated Floors</a>
+          
+            <a href="#" id="features10">Heated Pool</a>
+          
+            <a href="#" id="features11">Ocean Views</a>
+          
+            <a href="#" id="features12">New Construction</a>
+          
+            <a href="#" id="features13">Large Lot</a>
+          
+            <a href="#" id="features14">Large Kitchen</a>
+          
+            <a href="#" id="features15">Oversized Windows</a>
+          
+            <a href="#" id="features16">Pool</a>
+          
+            <a href="#" id="features17">Shopping Nearby</a>
+          
+            <a href="#" id="features18">Walk-In Closets</a>
+          
+            <a href="#" id="features19">Stainless Steel Appliances</a>
+          
+        </div>
+      </div>
+
+      <div class="bottomPhoto">
+          <img id="topPhoto" src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2814%20of%2058%29.jpg" class="modalImages">
+        <div id="myslideshowModals" class="slideshowModals">
+            <span class="slideshow-close-buttons" onclick="closeBottomPhotoModal()">&times;</span>
+            <div class="slideshowModal-contents">
+              <div class="my-slides">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%281%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2810%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2811%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2812%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2813%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2814%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2815%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2816%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2817%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2818%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2819%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2820%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2821%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2822%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2823%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2824%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2825%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2826%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2827%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2828%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2829%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2830%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2831%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2832%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2833%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2834%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2835%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2836%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2837%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2838%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2839%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%284%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2840%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2841%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2842%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2843%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2844%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2845%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2846%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2847%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2848%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2849%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%285%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2850%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2851%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2852%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2853%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2854%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2855%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2856%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2857%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2858%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%286%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%287%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%288%20of%2058%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%289%20of%2058%29.jpg" class="slideshowModal-images">
+                
+              </div>
+            </div>
+              <a class="prev-buttons" onclick="bottomSlides(-1)">&#10094;</a>
+              <a class="next-buttons" onclick="bottomSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id ="3">
+    <div class="horizontal-lines"></div>
+    <div id="customModal" class="custom-modal">
+      <span class="custom-close">&times;</span>
+      <img class="custom-modal-content" id="customModalImage">
+    </div>
+    <div class="centerTitle">Photos</div>
+      <div class="gallery">
+        <div class="galleryItem" id="">
+          
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%281%20of%2058%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%281%20of%2058%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2810%20of%2058%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2810%20of%2058%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2811%20of%2058%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2811%20of%2058%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2812%20of%2058%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2812%20of%2058%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2813%20of%2058%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2813%20of%2058%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2814%20of%2058%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2814%20of%2058%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2815%20of%2058%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2815%20of%2058%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2816%20of%2058%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11750/new/6%20Stonehouse%20Rd%20Scarsdale%20%2816%20of%2058%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </div>
+      </div> 
+      <div class="galleryText" id="topPhoto">
+        <p>View 56  Photos</p>
+      </div>
+  </section>
+  
+  <section>
+    <div class="horizontal-lines"></div>
+    <div class="showcase-tabs-wrapper text-center">
+      <a href="#" tabindex="0" role="button" tab-data="4" class="propertyCategory showcase-tab active">Video</a>
+      <a href="#" tabindex="0" role="button" tab-data="5" class="propertyCategory showcase-tab">3D Tour</a>
+      <a href="#" tabindex="0" role="button" tab-data="6" class="propertyCategory showcase-tab">Floor Plans</a>
+    </div>  
+
+    <div id="4" class="showcase-content">
+      <section id="4">
+        <div class="propertyVideos">
+          <div class="propertyMedia">
+            
+              <div class="propertyCategory">
+                <div class="videoPlayer">
+                  
+                    <video controls id="videoPlayer" data-video-url="https://videos.pexels.com/video-files/7578549/7578549-sd_640_360_30fps.mp4">
+                      <source src="https://videos.pexels.com/video-files/7578549/7578549-sd_640_360_30fps.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  
+                    <video controls id="videoPlayer" data-video-url="https://videos.pexels.com/video-files/7578555/7578555-sd_640_360_30fps.mp4">
+                      <source src="https://videos.pexels.com/video-files/7578555/7578555-sd_640_360_30fps.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="5" class="showcase-content" style="display: none;">
+      <section id="5">
+        <div class="propertyVideos">
+          <div class="propertyMedia">
+            
+              <div class="propertyCategory">
+                <div class="videoPlayer">
+                  
+                    <iframe src="https://s3-ap-southeast-1.amazonaws.com/rt360/Samples/crimson/CrimsonResortVR.html" id="videoPlayer" width="1000" height="500" style="border:0;" allowfullscreen="" loading="async" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <div id="6" class="showcase-content" style="display: none;">
+      <section id="6">
+        <div class="propertyVideos">
+          <div class="propertyMedia">
+            
+              <div class="propertyCategory">
+                <div class="floorPlanImage">
+                  
+                    <img src="https://www.researchgate.net/publication/356610760/figure/fig1/AS:1095470130696234@1638191840764/Sample-floor-plan-image-with-the-specification-of-different-room-sizes-and-furniture.jpg" alt="Floor Plan">
+                  
+                    <img src="https://www.researchgate.net/publication/356610760/figure/fig1/AS:1095470130696234@1638191840764/Sample-floor-plan-image-with-the-specification-of-different-room-sizes-and-furniture.jpg" alt="Floor Plan">
+                  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section id="7" class="google-maps-section">
+    <div class="horizontal-lines"></div>
+    <div class="location">
+      <div class="leftAddress">LOCATION</div>
+      <div class="rightAddress">
+        <iframe  class="googleMap" src="https://www.google.com/maps/embed?pb=!1m2!2m1!1s6%20Stonehouse%20Rd%2C%20Scarsdale%2C%20NY%2010583%2C%20USA!3m5!1s0x89c29371bdf749a9%3A0xf9cbff2f9d54b882!8m2!3d40.9921039!4d-73.8047322!16s%2Fg%2F11c2dbnd31?entry=ttu" width="700" height="500" frameborder="0" allowfullscreen="" loading="async" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id = "8">
+    <div class="contact-footer">
+      <div class="contact-form-section">
+        <div class="contactForm">
+          <div class="title-text">Get in touch</div>
+          <form id="contactForm" action="#" method="post">
+            <div class="form-group">
+              
+                <input type="text" id="firstName" name="firstName" placeholder="First Name*" autocomplete="off">
+              
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name*" autocomplete="off">
+              
+                <input type="text" id="email" name="email" placeholder="Email*" autocomplete="off">
+              
+                <input type="text" id="phone" name="phone" placeholder="Phone*" autocomplete="off">
+              
+                <input type="text" id="comment" name="comment" placeholder="Comment*" autocomplete="off">
+              
+              <div class="inquiryButton">
+                <button class="inquiryBtn" type="submit">Send Inquiry</button>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+        <div class="propertyRealtor">
+          <p class="centerTitle">Presented By</p>
+          <div class="realtorDetails">
+            
+            <div class="realtor">
+              <div class="realtorImg">
+                <img src="https://www.corporatephotographerslondon.com/wp-content/uploads/2018/04/LinkedIn-Headshot-white-background-300x300.jpg" alt="Modal Trigger Image" class="realtor-img">
+              </div> 
+              <div class="realtor-details">
+                <h4>Maximme Rider</h4>
+                <p>Lead Broker</p>
+                <p>Revastaff</p>
+                <p>(949) 555-6789</p>
+                <p><a href="mailto:maximme@gmail.com">maximme@gmail.com</a></p>
+                <p><a href="www.revastaff.com">www.revastaff.com</a></p>
+                <p>CalRE# 123456</p>
+              </div>
+            </div>
+            
+            <div class="realtor">
+              <div class="realtorImg">
+                <img src="https://www.imagefitz.com/wp-content/uploads/2019/02/Professional-Headshot-Photography-1JF1398-Square.jpg" alt="Modal Trigger Image" class="realtor-img">
+              </div> 
+              <div class="realtor-details">
+                <h4>Kween Yasmin</h4>
+                <p>C.E.O</p>
+                <p>Revastaff</p>
+                <p>(949) 949-9499</p>
+                <p><a href="mailto: kweenyasmin@revastaff.com"> kweenyasmin@revastaff.com</a></p>
+                <p><a href="www.revastaff.com">www.revastaff.com</a></p>
+                <p>DRE: 123456</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="9">
+    <div class="footer">
+      <img src=https://revastaff.app/revastaff/logo/powered_by_revastaff.png class="revaLogo">
+        <div class="footertext">Copyright Revastaff, Inc 2023. This website is for example purposes only. This is a fictitious listing and is not for sale. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+    </div>
+  </section>
+
+  <footer>                                                                                                                                                                  
+    <div  class="socmed">
+      <ul>
+        
+          <li><a href="https://www.facebook.com/REVAstaff"><img src="https://revastaff-ph.app/revastaff/logo/facebook.png"></a></li>
+        
+          <li><a href="https://twitter.com/reva_staff"><img src="https://revastaff-ph.app/revastaff/logo/twitter.png"></a></li>
+        
+          <li><a href="https://www.instagram.com/reva_staff/"><img src="https://revastaff-ph.app/revastaff/logo/instagram.png"></a></li>
+        
+          <li><a href="https://www.pinterest.com/"><img src="https://cdn-icons-png.flaticon.com/128/145/145808.png"></a></li>
+        
+          <li><a href="https://ph.linkedin.com/company/revastaff/"><img src="https://cdn-icons-png.flaticon.com/128/145/145807.png"></a></li>
+        
+          <li><a href="https://revastaff.com/"><img src="https://revastaff.app/revastaff/logo/globe.png"></a></li>
+        
+          <li><a href="https://www.youtube.com/channel/UChjeEbJREEabQ92TLtVXTEA"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png"></a></li>
+        
+          <li><a href="https://www.tiktok.com/@reva_staff"><img src="https://revastaff-ph.app/revastaff/logo/tiktok.png"></a></li>
+        
+      </ul>
+    </div>
+  </footer>
+
+  <div  id="share-buttons">
+    
+      <li><a class="facebook" href=""><img src="https://revastaff-ph.app/revastaff/logo/facebook.png"></a></li>
+    
+      <li><a class="x" href=""><img src="https://revastaff-ph.app/revastaff/logo/twitter.png"></a></li>
+    
+      <li><a class="gmail" href=""><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png"></a></li>
+    
+      <li><a class="instagram" href=""><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"></a></li>
+    
+      <li><a class="pinterest" href=""><img src="https://cdn-icons-png.flaticon.com/128/3536/3536559.png"></a></li>
+    
+      <li><a class="reddit" href=""><img src="https://cdn-icons-png.flaticon.com/128/3536/3536761.png"></a></li>
+    
+  </div>
+
+
+<script>
+
+  window.onscroll = function() {
+    scrollFunction();
+  };
+  function scrollFunction() {
+    var section1 = document.getElementById("description");
+    var shareButtons = document.querySelector('#share-buttons');
+    if (document.body.scrollTop > section1.offsetTop || document.documentElement.scrollTop > section1.offsetTop) {
+      shareButtons.style.transform = "translateX(0%)";
+    } else {
+      shareButtons.style.transform = "translateX(-150%)";
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const topPhotos = document.querySelectorAll('[id^="topPhoto"]');
+    
+    topPhotos.forEach(function(topPhoto) {
+        topPhoto.addEventListener('click', function() {
+            const topPhotoModal = document.getElementById('myModal');
+            if (topPhotoModal) {
+                topPhotoModal.style.display = 'block';
+            } else {
+                console.log("Modal element not found");
+            }
+        });
+    });
+  });
+
+  function closeTopPhotoModal() {
+    const topPhotoModal = document.getElementById('myModal');
+    topPhotoModal.style.display = 'none';
+  }
+
+  var topSlideIndex = 1;
+  showTopSlide(topSlideIndex);
+
+  function topSlides(n) {
+    showTopSlide(topSlideIndex += n);
+  }
+
+  function presentSlide(n) {
+    showTopSlide(topSlideIndex = n);
+  }
+
+  function showTopSlide(n) {
+    var i;
+    var slideTop = document.getElementsByClassName("mySlides")[0].getElementsByTagName("img");
+    if (n > slideTop.length) { topSlideIndex = 1; }
+    if (n < 1) { topSlideIndex = slideTop.length; }
+    for (i = 0; i < slideTop.length; i++) {
+      slideTop[i].style.display = "none";
+    }
+    slideTop[topSlideIndex - 1].style.display = "block";
+  }
+  
+  //PHOTO GALLERY SLIDESHOW
+  var customModal = document.getElementById('customModal');
+  var customModalImg = document.getElementById('customModalImage');
+  var customModalIndex = 0;
+
+  var customModalTriggers = document.querySelectorAll('.custom-modal-trigger');
+
+  customModalTriggers.forEach(function(trigger, index) {
+    trigger.addEventListener('click', function() {
+      var imageSrc = trigger.getAttribute('data-image');
+      customModalIndex = index;
+
+      customModal.style.display = 'block';
+      showCustomImage(imageSrc);
+    });
+  });
+
+  var customCloseBtn = document.querySelector('.custom-close');
+  customCloseBtn.addEventListener('click', function() {
+    customModal.style.display = 'none';
+  });
+
+  window.addEventListener('click', function(event) {
+    if (event.target === customModal) {
+      customModal.style.display = 'none';
+    }
+  });
+
+  function showCustomImage(src) {
+    customModalImg.src = src;
+
+    if (customModalTriggers.length > 1) {
+      var customPrevBtn = document.createElement('a');
+      customPrevBtn.className = 'custom-prev';
+      customPrevBtn.innerHTML = '&#10094;';
+      customPrevBtn.addEventListener('click', function() {
+        navigateCustomSlides(-1);
+      });
+      customModal.appendChild(customPrevBtn);
+
+      var customNextBtn = document.createElement('a');
+      customNextBtn.className = 'custom-next';
+      customNextBtn.innerHTML = '&#10095;';
+      customNextBtn.addEventListener('click', function() {
+        navigateCustomSlides(1);
+      });
+      customModal.appendChild(customNextBtn);
+    }
+  }
+
+  function navigateCustomSlides(direction) {
+    customModalIndex += direction;
+
+    if (customModalIndex >= customModalTriggers.length) {
+      customModalIndex = 0;
+    } else if (customModalIndex < 0) {
+      customModalIndex = customModalTriggers.length - 1;
+    }
+    var newImageSrc = customModalTriggers[customModalIndex].getAttribute('data-image');
+    showCustomImage(newImageSrc);
+  }
+
+  // HOME IMAGES
+  setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+  }, 9000); 
+  const images = document.querySelectorAll('.slideshow img');
+    let currentIndex = 0;
+    function showImage(index) {
+      images.forEach((image, i) => {
+        if (i === index) {
+            image.classList.add('active');
+        } else {
+            image.classList.remove('active');
+        }
+    });
+  }
+  setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+  }, 9000);
+
+  function playVideo(element) {
+    var videoPlayer = element.closest('.propertyCategory').querySelector('video');
+    var source = videoPlayer.querySelector('source');
+    var videoUrl = element.dataset.videoUrl;
+    console.log('Clicked video title:', element.innerText);
+    if (videoUrl) {
+      console.log('Video URL:', videoUrl);
+      videoPlayer.pause();
+      videoPlayer.currentTime = 0;
+      videoPlayer.addEventListener('canplay', function onCanPlay() {
+        videoPlayer.removeEventListener('canplay', onCanPlay);
+        videoPlayer.play();
+      });
+      source.src = videoUrl;
+      videoPlayer.load();
+    } else {
+      console.error('Error: Video URL is undefined.');
+    }
+  }
+
+  document.getElementById('toggleMenu').addEventListener('click', function() {
+    var sideMenu = document.getElementById('sideMenu');
+    if (sideMenu.style.transform === 'translateX(0%)') {
+      sideMenu.style.transform = 'translateX(100%)'; 
+    } else {
+      sideMenu.style.transform = 'translateX(0%)';
+    }
+  });
+
+  document.getElementById('closeMenu').addEventListener('click', function() {
+    var sideMenu = document.getElementById('sideMenu');
+    sideMenu.style.transform = 'translateX(100%)'; 
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 100,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const tabs = document.querySelectorAll('.showcase-tab');
+    const contents = document.querySelectorAll('.showcase-content');
+    const menuItems = document.querySelectorAll('#menu a');
+    const sideMenuItems = document.querySelectorAll('#sideMenu a');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+            e.preventDefault();
+            activateTab(this.getAttribute('tab-data'));
+        });
+    });
+
+    menuItems.forEach(menuItem => {
+      menuItem.addEventListener('click', function(e) {
+          e.preventDefault();
+          const sectionId = this.getAttribute('href');
+          activateTab(sectionId.substring(1));
+          document.getElementById(sectionId.substring(1)).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    sideMenuItems.forEach(sideMenuItem => {
+      sideMenuItem.addEventListener('click', function(e) {
+          e.preventDefault();
+          const sectionId = this.getAttribute('href');
+          activateTab(sectionId.substring(1));
+          document.getElementById(sectionId.substring(1)).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    function activateTab(tabId) {
+        tabs.forEach(tab => {
+            if (tab.getAttribute('tab-data') === tabId) {
+                tab.classList.add('active');
+            } else {
+                tab.classList.remove('active');
+            }
+        });
+
+        contents.forEach(content => {
+            if (content.id === tabId) {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        });
+    }
+    const activeTab = document.querySelector('.showcase-tab.active');
+    if (activeTab) {
+        activateTab(activeTab.getAttribute('tab-data'));
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    function isValidEmail(email) {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    function isValidPhoneNumber(phoneNumber) {
+      var phoneRegex = /^[0-9\s+]+$/;
+      return phoneRegex.test(phoneNumber);
+    }
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+
+      var formData = {};
+
+      document.querySelectorAll('#contactForm input').forEach(function(input) {
+        formData[input.name] = input.value;
+      });
+
+      if (formData['email'] && !isValidEmail(formData['email'])) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      if (formData['phone'] && !isValidPhoneNumber(formData['phone'])) {
+        alert('Please enter a valid phone number.');
+        return;
+      }
+
+      console.log(JSON.stringify(formData, null, 2));
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', handleFormSubmit);
+  });
+
+  const link = encodeURI(window.location.href);
+  const message = encodeURIComponent('Hey, I found this property');
+  const title = encodeURIComponent(document.querySelector('title').textContent);
+
+  const fb = document.querySelector('.facebook');
+  fb.href = `https://www.facebook.com/share.php?u=${link}`;
+
+  const x = document.querySelector('.x');
+  x.href = `https://www.twitter.com/share?&url=${link}&text=${message}&hashtags=realEstate,property`;
+  
+  const gmail = document.querySelector('.gmail');
+  gmail.href = `https://mail.google.com/mail/u/0/#inbox?compose=new&messagebody=${link}`;
+
+  const instagram = document.querySelector('.instagram');
+  instagram.href = `https://instagram.com/direct/new?`;
+
+  webLink = 'https://revastaff.com/production/';
+  const pinterest = document.querySelector('.pinterest');
+  pinterest.href = `https://www.pinterest.com/pin/create/button/?url=${webLink}&description=${message}&title=${title}`;
+  
+  const reddit = document.querySelector('.reddit');
+  reddit.href = `https://www.reddit.com/submit?url=${link}&title=${title}`;
+
+
+  </script>
+</body>
+</html>

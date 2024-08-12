@@ -1,0 +1,3231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>257 Fox Meadow Rd</title>  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    h1 {
+      font-size: 6vw;
+      margin-bottom: 1vw;
+      color: white;
+    }
+    h2 {
+      font-size: 1.5vw;
+    }
+    h3 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: white;
+    }
+    h4 {
+      font-size: 1vw;
+      padding-left: 2vw;
+      color: black;
+      text-transform: uppercase;
+    }
+    .title-textt {
+      font-size: 55px;
+      padding: 0;
+      margin: 0;
+    }
+    .title-text {
+      font-size: 2vw;
+      margin: 0;
+      font-family: "Oswald";
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .feature-text {
+      font-size: 1.5vw;
+      font-family: "Oswald";
+    }
+    .address-text {
+      font-size: 2.5vw;
+      padding: 0;
+    }
+    .centerTitle {
+      font-size: 2vw;
+      font-family: "Oswald";
+      padding: 0;
+      margin-bottom: 3vw;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .med-text {
+      font-size: 1.8vw;
+      padding: 0;
+    }
+    .subtext {
+      font-size: .8vw;
+      margin-top:-20px;
+      color: #6e6e6e;
+      font-family: "Montserrat";
+      text-align: center;
+    }
+    .galleryText {
+      font-size: 1.2vw;
+      margin-bottom: 3vw;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .text {
+      font-size: .8vw;
+      color: black;
+      font-family: "Montserrat";
+      margin: 0;
+    }
+    .footertext {
+      font-size: .8vw;
+      margin: 1vw 10vw;
+      padding-bottom: 4vw;
+      font-family: "Montserrat";
+    }
+    .text-center {
+      font-size: 1vw;
+      color: black;
+      font-family: "Montserrat";
+      text-align: center;
+      margin: 0;
+    }
+    .text-right {
+      font-size: 1vw;
+      color: black;
+      font-family: "Montserrat";
+      text-align: right;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .horizontal-line {
+      width: 100%; 
+      height: 1px; 
+      background-color: #aeacac;
+      margin: 2vw 0 2vw 0;
+    }
+    .horizontal-lines {
+      position: relative;
+      left: 15%;
+      width: 70%; 
+      height: 1px; 
+      background-color: #aeacac;
+    }
+    .prev:hover, .next:hover, .prev-buttons:hover, .next-buttons:hover, .custom-prev:hover, .custom-next:hover{
+      color: white;
+      text-decoration: none;
+    } 
+    .prev:active, .next:active, .prev-buttons:active, .next-buttons:active, .custom-prev:active, .custom-next:active{
+      color: white;
+      text-decoration: none;
+    } 
+    body {
+      font-family: "Oswald";
+      margin: 0;
+      padding: 0;
+    }
+    #home {
+      position: relative;
+      overflow: hidden;
+      height: 50vw; 
+    }
+    #homeVideoPlayer {
+      width: 100%;
+    }
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      grid-gap: 50px;
+      padding: 0;
+      height: 2.5vw;
+      background: white;
+      background-size: 6px;
+      top: -56px;
+      /* z-index: 99; */
+    }
+    .title {
+      color: black;
+      font-size: 1.2vw;
+      z-index: 999;
+      font: europa,"Open Sans",sans-serif !important;
+      font-weight: 700;
+      white-space: nowrap;
+      /* margin: 1% 1% 0 10%; */
+      position: absolute;
+      left: 90px;
+      top: 9px;
+    }
+    .address-bot {
+      font-size: 45px;
+    z-index: 999;
+    font: europa,"Open Sans",sans-serif !important;
+    font-weight: 700;
+    white-space: nowrap;
+    /* margin: 1% 1% 0 10%; */
+    position: absolute;
+    color: white;
+    left: 12vh;
+    top: 815px;
+    }
+    .address-bot2 {
+    font-size: 20px;
+    z-index: 999;
+    font: europa,"Open Sans",sans-serif !important;
+    font-weight: 700;
+    white-space: nowrap;
+    /* margin: 1% 1% 0 10%; */
+    position: absolute;
+    color: white;
+    left: 12vh;
+    top: 870px;
+    }
+    .requests {
+      color: black;
+    font-size: 18px;
+    z-index: 999;
+    font: europa,"Open Sans",sans-serif !important;
+    font-weight: 700;
+    white-space: nowrap;
+     margin: 0 5% 0 10%;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    }
+    .tv {
+    /* position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation-fill-mode: none !important; */
+    /* border-style: solid; */
+    /*border-color: white;
+    /* border-width: 20px;
+    position: absolute; */
+    /* top: 30px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation-fill-mode: none !important; */
+   /* border: 2px solid brown; */
+   border-right: 18px solid white;
+    border-left: 19px solid white;
+
+}
+/* .address-bot {
+  position: absolute;
+  bottom: 10vw;
+  left: 5vw;
+} */
+.homevideo {
+  /* max-width: 100%;
+  height: 100vh;
+  border-radius: 8px; */
+  position: absolute;
+  width: 100%;
+  /* top: 30px;
+  bottom: 0; */
+  margin: auto;
+}
+    #menu {
+      /* display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center; */
+      font-family: "Raleway","Open Sans",Helvetica,Arial,sans-serif;
+      /* padding-right: 8%; */
+      color: black;
+      position: absolute;
+      left: 600px;
+      top: 10px;
+      font-size: 16px;
+    }
+    #menu a {
+      color: black;
+      font-family: "Raleway","Open Sans",Helvetica,Arial,sans-serif;
+      text-decoration: none;
+      padding: 0 .4vw;
+      font-size: 16px;
+      z-index: 999;
+    }
+    /* .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      grid-gap: 50px;
+      padding: 0;
+      z-index: 99;
+      background: linear-gradient(180deg,rgba(0, 0, 0, 0.435) 20%,rgba(255, 255, 255, 0.086) 100%);
+    }
+    .title {
+      color: white;
+      font-size: 3vw;
+      font-weight: bold;
+      font-family: "Oswald";
+      text-transform: uppercase;
+      z-index: 999;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin: 2% 2% 0 10%;
+    }
+    #menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      font-family: "Fira Sans";
+      padding-right: 8%;
+    }
+    #menu a {
+      color: white;
+      text-decoration: none;
+      padding: 0 .6vw;
+      font-size: 1vw;
+      z-index: 999;
+    } */
+    .slideshow {
+      max-width: 100%;
+      height: 100vh;
+      animation: fade 30s infinite;
+    }
+      @keyframes fade {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .slideshow img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      /* height: 100vh; */
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      animation: zoominout 10s infinite alternate;
+    }
+      @keyframes zoominout {
+        0% {
+            transform: scale(1.02);
+        }
+        100% {
+            transform: scale(1.01);
+        }
+      }
+    .slideshow img.active {
+      opacity: 1;
+    }
+    .price {
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+    padding: 0.6vw 5vw;
+    font-size: 2vw;
+    border: 1px solid white;
+    }
+    #details {
+      text-align: center;
+      padding: 2vw 0;
+      border-bottom: 1px solid #ccc;
+      /* border: 2px solid blue; */
+    }
+    #details-menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .detail-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1vw;
+    }
+    .detail-item .material-icons {
+      font-size: 2vw;
+    }
+    #description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .propertyAddress {
+      font-size: 3vw;
+      margin-bottom: 5vw;
+      font-family: "Oswald";
+      text-transform: uppercase;
+    }
+    #propertyDescription {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      grid-gap: 20px;
+    }
+    #propertyDescriptionBottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      grid-gap: 20px;
+    }
+    .description {
+      width: 50%;
+      font-family: "Montserrat";
+      line-height: 1.5;
+      font-size: 1vw;
+      letter-spacing: 2px;
+      padding: 2%;
+    }
+    .photoGrid {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      box-shadow: 8px 18px 30px -10px rgba(0,0,0,0.25);
+    }
+    .gridItem {
+      display: flex;
+      flex-direction: row;
+    }
+    .modalImages {
+      width: 30vw;
+    }
+    .modalImagesBottom{
+      width: 15vw;
+      flex-direction: row;
+    }
+    .modalImages:hover{
+      background: rgba(0,0,0,0.12);
+      transform: translateX(0%) scale(1.010);
+    }
+    .modalImagesBottom:hover{
+      background-color: rgba(0,0,0,0.12);
+      transform: translateX(0%) scale(1.010);
+    }
+  
+    .topPhoto,
+    .bottomPhoto{
+      margin: 20px;
+    }
+    #features {
+      width: 40vw;
+      height: 60vh;
+    }
+    #feature-title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 2vw;
+      font-family: "Oswald";
+      text-transform: uppercase;
+    }
+    #feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      align-content: center;
+      justify-content: flex-start;    
+      margin-top: 2vw;
+    }
+    #feature-list a {
+      margin-right: 1vw; 
+      margin-bottom: 2vw;
+      padding: .5vw .5vw;
+      font-size: 1vw;
+      font-family: "Montserrat";
+      background-color: #f0f0f0; 
+      color: #333; 
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    #feature-list :hover {
+      background-color: #E3E3E3; 
+      color: black; 
+      transform: scaleX(1.02);
+      transform-origin: center;
+    }
+    .gallery {
+      display: flex;
+      margin: 2vw auto;
+      width: 60vw;
+      /* height: 100%; */
+      box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.81);
+      -webkit-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.81);
+      -moz-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.81);
+    }
+    .galleryItem {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      margin: 0 auto;
+    }
+    .photo:hover{
+      background: rgba(0,0,0,0.12);
+      transform: translateX(0%) scale(1.010);
+    }
+    .photo {
+      width: 15vw;
+      text-align: center;
+    }
+    .propertyVideos {
+      display: flex;
+      flex-direction: column;
+      top: 10px;
+      justify-content: center;
+      align-items: center;
+      /* background-color: #F5F9FF; */
+    }
+    .propertyMedia {
+      display: flex;
+      flex-direction: column;
+    }
+    .showcase-tabs-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      /* background-color: #F5F9FF; */
+      font-size: 2vw;
+    }
+    .showcase-tabs-wrapper a {
+      text-decoration: none;
+      color: black;
+      padding: 1vw;
+    }
+    .showcase-tabs-wrapper a:hover {
+      text-decoration: underline;
+    }
+    .showcase-tabs-wrapper a:active {
+      text-decoration: underline;
+    }
+    .propertyCategory {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.8vw;
+      margin: 1vw;
+      font-weight: 700;
+    }
+    .floorPlanImage img {
+      display: flex;
+      flex-wrap: wrap;
+      width: 40vw;
+      margin: 5vw;
+    }
+    .videoPlayer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0% 2% 4% 2%;
+    }
+    #videoPlayer {
+      width: 60vw;
+      margin-top: 2vw;
+    }
+    .propertyRealtor {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-top: 50px;
+      margin: 2vw;
+    }
+    .realtorDetails {
+      display: flex;
+    }
+    .realtor {
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      padding: 4vw;
+    }
+    .realtor-info {
+      margin: 1%;
+      font-size: 2vw;
+    }
+    .realtor-details p {
+      margin: 0;
+      padding-left: 2vw;
+      font-size: .9vw;
+      font-family: "Montserrat";
+    }
+    .realtor-img {
+      width: 12vw; 
+      box-shadow: 8px 18px 30px -10px rgba(0,0,0,0.25);
+    }
+    .realtorImg {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .google-maps-section {
+      text-align: center;
+    }
+    .googleMap {
+      width: 65%;
+      height: 60vh;
+      margin: 3vw 0;
+      border: 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form-section {
+      margin: 0 auto;
+      padding: 5vw;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    .form-group {
+      max-width: 45vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      margin: 3vw auto 3vw auto;
+    }
+    .form-group input[type="text"] {
+      border: none; 
+      border-bottom: .1vw solid black; 
+      padding: 1vw; 
+      margin-bottom: 1vw; 
+      width: 35vw; 
+      box-sizing: border-box;
+      outline: none;
+      font-size: 1vw;
+    }
+    .form-group label {
+      text-align: left;
+      font-size: 1vw;
+      color: #9E9F9F;
+      font-family: "Montserrat";
+      margin: 0;
+    }
+    .inquiryButton {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .inquiryBtn {
+      padding: .5vw;
+      text-align: center;
+      margin: .5vw;
+      width: 15vw;
+      font-size: 1vw;
+      background-color: white;
+      border: .1vw solid black;
+    }
+    .inquiryBtn:hover {
+      background-color: black;
+      color: white;
+    }
+    .footer {
+      padding: 2vw 0 1vw 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .footerDetails {
+      max-width: 65vw;
+    }
+    .revaLogo {
+      width: 10vw;
+    }
+    footer {
+      background-color: #3f3939;
+      color: white;
+      text-align: center;
+      padding: .5vw 0;
+      width: 100vw;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 1100;
+      cursor: pointer;
+    }
+    .socmed ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .socmed li {
+      margin: 0.5vw 1vw;
+    }
+    .socmed li img {
+      width: 1.5vw;
+      height: 1.5vw;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    input {
+      height: 5vh;
+      width: 90%;
+    }
+    .floating-menu {
+      position: fixed;
+      z-index: 1;
+      top: 2vw;
+      right: 1vw;
+      background-color: #fff;
+      width: 7vw;
+      padding: .5vw;
+      box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease; 
+      transform: translateX(120%);
+    }
+    .sideMenuTitle {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-around;
+      color: #000;
+    }
+    .sideMenuTitle p, .material-icons {
+      font-size: 1vw;
+      margin: 0 auto;
+    }
+    .sideMenu {
+      top: 0;
+      right: 0;
+      float: right;
+      width: 15vw;
+      height: 100%;
+      padding: 1vw;
+      position: fixed;
+      color: #000;
+      background-color: #fff;
+      z-index: 100;
+      border-left: solid 3px #000;
+      transition: transform 0.3s ease; 
+      transform: translateX(100%);
+    }
+    .sideMenu a {
+      display: flex;
+      margin-bottom: 10px;
+      color: #333;
+      text-decoration: none;
+      padding: 5px;
+      font-size: 1.5vw;
+      justify-content: flex-end;
+    }
+    .sideMenu i.material-icons {
+      font-size: 2vw;
+      width: 0;
+    }
+    .slideshowModal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+    .slideshow-modal-content {
+      margin: auto;
+      display: block;
+      max-width: 70%; 
+      max-height: 50vh;
+    }
+    .slideshowModal-img {
+      width: 52vw; 
+      position: fixed;
+      left: 24vw;
+      top: 4vw;
+    }
+    .closeSlideshow {
+      color: #fff;
+      position: absolute;
+      top: 1vw;
+      right: 3vw;
+      font-size: 3vw;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .closeSlideshow:hover,
+    .closeSlideshow:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .mySlides {
+      display: flex;
+    }
+    .prev, .next {
+      position: fixed;
+      top: 50%;
+      margin-top: -4vw auto;
+      padding: 0 12vw;
+      color: white;
+      font-weight: bold;
+      font-size: 3vw;
+      cursor: pointer;
+      user-select: none;
+    }
+    .prev {
+      right: 70vw;
+      top: 20vw;
+    }
+    .next {
+      left: 70vw;
+      top: 20vw;
+    }
+    @media only screen and (max-width: 700px) {
+      .slideshow-modal-content {
+        width: 100%;
+      }
+    }
+    .slideshowModals {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+    .slideshowModal-contents {
+      width: 100vw; 
+    }
+    .slideshowModal-images {
+      width: 52vw;
+      position: fixed;
+      left: 24vw;
+      top: 4vw;
+    }
+    .slideshow-close-buttons {
+      color: #fff;
+      position: absolute;
+      top: 1vw;
+      right: 5vw;
+      font-size: 3vw;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .slideshow-close-buttons:hover,
+    .slideshow-close-buttons:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .prev-buttons, .next-buttons {
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -4vw;
+      padding: 2vw 0vw;
+      color: white;
+      font-weight: bold;
+      font-size: 3vw;
+      cursor: pointer;
+      user-select: none;
+    }
+    .prev-buttons {
+      right: 82vw;
+      top: 20vw;
+    }
+    .next-buttons {
+      left: 82vw;
+      top: 20vw;
+    }
+    @media only screen and (max-width: 700px) {
+      .slideshow-modal-contents {
+        width: 100%;
+      }
+    }
+    .custom-modal {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+      background-color: black;
+    }
+    .custom-modal-content {
+      margin: auto;
+      display: block;
+      width: 52vw;
+      position: fixed;
+      top: 4vw;
+      left: 24vw;
+    }
+    .custom-close {
+      position: absolute;
+      top: 1vw;
+      right: 4vw;
+      color: #f1f1f1;
+      font-size: 3vw;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .custom-carousel-img {
+      width: 100px; 
+      height: auto;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .custom-prev, .custom-next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 2vw 20vw;
+      margin-top: -4vw;
+      color: white;
+      font-weight: bold;
+      font-size: 3vw;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+    .custom-prev {
+      right: 60vw;
+      top: 20vw;
+    }
+    .custom-next {
+      left: 60vw;
+      top: 20vw;
+    }
+    #share-buttons {
+      position: fixed;
+      cursor: pointer;
+      bottom: 25%; 
+      right: 0;
+      transform: translateY(50%);
+    }
+    #share-buttons li {
+      display: flex;
+      background-color: #333;
+    }
+    #share-buttons img {
+      width: 2vw;
+      margin: .4vw;
+    }
+    #share-buttons li:hover {
+      animation: transition ease-in-out 0.3s;  
+      transform: translateX(0%) scale(1); 
+      right: 0;
+      padding-left: .5vw;
+      background-color: white;
+      margin: 0;
+    }
+
+/* Ipad*/
+/* @media only screen and (min-device-width: 451px) and (max-device-width: 1000px) {
+   .title-text {
+      font-size: 6vw;
+      padding: 0;
+      font-family: "Oswald";
+    }
+    .address-text {
+      font-size: 4vw;
+      text-align: left;
+    }
+    .subtext {
+      font-size: 2vw;
+    }
+    .med-text {
+      font-size: 5vw;
+      padding: 0;
+    }
+    .text-center {
+      font-size: 1.5vw;
+    }
+    .text {
+      font-size: 2vw;
+    }
+    h1 {
+      font-size: 10vw;
+      margin-bottom: 40px;
+      color: white;
+    }
+    h2 {
+      font-size: 3vw;
+    }
+    h3 {
+      font-size: 6vw;
+      margin-bottom: 15px;
+      color: white;
+    }
+    h4 {
+      font-size: 5vw;
+      color: black;
+    }
+    body {
+      width: 100%;
+      margin: 0;
+    }
+    #home {
+      width: 100%;
+      height: 50vh;
+    }
+    .slideshow {
+      max-width: 100%;
+      height: 100%;
+    }
+    .slideshow img {
+      width: 100%;
+    }
+      @keyframes zoominout {
+        0% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+      }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      grid-gap: 5px;
+      z-index: 998;
+    }
+    .title {
+      font-size: 6vw;
+      justify-content: flex-start;
+      margin: 3% 1% 0 4%;
+    }
+    .sideMenu {
+      top: 0;
+      right: 0;
+      float: right;
+      width: 200px;
+      height: 100%;
+      padding: 25px;
+      position: fixed;
+      color: #000;
+      background-color: #fff;
+      z-index: 1000;
+      border-left: solid 3px #000;
+      transition: transform 0.3s ease; 
+      transform: translateX(100%);
+    }  
+    .sideMenu a {
+      font-size: 4vw;
+    }
+    .sideMenu i.material-icons {
+      font-size: 50px;
+    }
+    #menu {
+      display: none;
+    }
+    #scroll-button {
+      height: 8vw;
+      width: 8vw;
+    }
+    #scroll-button i {
+      font-size: 3vw;
+    }
+    #details {
+      justify-content: center;
+      max-height: 100%;
+      padding: 4vw 0 6vw 0;
+      grid-gap: 2vw;
+    }
+    .detail-item {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .detail-item .material-icons {
+      font-size: 3vw;
+    }
+    .propertyAddress {
+      justify-content: center;
+      display: flex;
+      font-size: 6vw;
+      margin-top: 8vw;
+    }
+    #propertyDescription {
+      justify-content: center;
+    }
+    #propertyDescriptionBottom {
+      justify-content: center;
+    }
+    .description {
+      width: 100%;
+      font-size: 2vw;
+      padding: 5vw;
+      text-align: justify;
+    } 
+    .modalImages {
+      width: 100%;
+      border-right: 4vw solid #feeca4f2;
+      border-bottom: 4vw solid #feeca4f2;
+
+    }
+    .side-modalImages {
+      width: 100%;
+      border-right: 4vw solid #feeca4f2;
+      border-bottom: 4vw solid #feeca4f2;
+    }
+    .topPhoto,
+    .bottomPhoto{
+      margin: 20px;
+      width: 100%;
+      justify-content: flex-end;
+    }
+    .circle {
+      width: 100vw;
+    }
+    .desc-void {
+      justify-content: center;
+      border: 2px solid black;
+      width: 60vw;
+      height: 60vw;
+      font-size: 7vw;
+    }
+    .open-house-preview {
+        font-size: 3vw;
+    }
+    .view-details-cta {
+      font-size: 3vw;
+    }
+    #feature-title {
+      font-size: 6vw;
+    }
+    #feature-list {      
+      display: flex;
+      max-width: 90%;
+      margin-top: 8vw;
+    }
+    #feature-list a {
+      margin-right: 20px; 
+      margin-bottom: 10px;
+      padding: 8px 15px;
+      border-radius: 20px; 
+      font-size: 3vw;
+      text-decoration: none;
+      border: 1px solid black;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+    .feature-text {
+      font-size: 3vw;
+      font-family: "Oswald";
+    }
+    #carousels {
+      height: 40vh;
+    }
+    .carousel-row {
+      display: block; 
+      white-space: nowrap; 
+    }
+    .carousel-img {
+      display: inline-block; 
+      width: 18%;
+      height: 20vh;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+    .carousel-container {
+      overflow: hidden;
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .carousels img {
+        flex: 0 0 auto;
+        width: 32vw;
+        margin-right: 1vw;
+    }
+    #first-carousel {
+        display: flex;
+        animation: scrollAnimation 60s linear infinite;
+    }
+    #first-carousel:hover{
+        animation-play-state: paused;
+    }
+    #second-carousel {
+        display: flex;
+        animation: scrollAnimationOpposite 60s linear infinite;
+    }
+    #second-carousel:hover{
+        animation-play-state: paused;
+    }
+    .propertyVideos {
+      top: 10px;
+    }
+    .propertyCategory {
+      font-size: 6vw;
+    }
+    .floorPlanImage img {
+      width: 80vw;
+    }
+    #videoPlayer {
+      width: 80vw;
+    }
+    .propertyRealtor {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      max-height: 100%;
+      margin-top: 50px;
+      width: 100%;
+    }
+    .centerTitle {
+      font-size: 6vw;
+    }
+    .realtorDetails {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+    }
+    .realtor {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; 
+      width: 100%;
+    }
+    .realtor-info {
+      display: flex;
+      margin: 1%;
+      font-size: 4vw;
+    }
+    .realtor-details {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      width: 60vw;
+    }
+    .realtor-details p {
+      padding: 1%;
+      text-align: center;
+      font-size: 2vw;
+    }
+    .realtor-img {
+      width: 20vw; 
+    }
+    .realtorImg {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .contact-form-section {
+      max-width: 60vw;
+    }
+    .form-group label {
+      font-size: 2vw;
+    }
+    .form-group input[type="text"] {
+      width: 50vw;
+      border-bottom: .2vw solid black;
+    }
+    .inquiryButton {
+      flex-direction: column;
+      width: 60vw;
+    }
+    .inquiryBtn {
+      font-size: 3vw;
+      width: 50vw;
+      border: .2vw solid black;
+    }
+    .footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100vw;
+    }
+    .footerDetails {
+      max-width: 65vw;
+      margin: 10vw auto;
+      padding-bottom: 10vw;
+    }
+    .revaLogo {
+      width: 20vw;
+    }
+    .footertext {
+      font-size: 3vw;
+      margin: 10vw 0 10vw 0;
+    }
+    .footerImage {
+      width: 30%;
+      height: 30%;
+    }
+    .socmed ul{
+      margin: .5vw;
+      padding: .5vw;
+    }
+    .socmed li {
+      margin: 0 2vw;
+    }
+    .socmed li img {
+      width: 5vw;
+      height: 5vw;
+    }
+    .floating-menu {
+      top: 5vw;
+      right: 4vw;
+      width: 14vw;
+      padding: 1vw;
+    }
+    .sideMenuTitle p, .material-icons {
+      font-size: 2.5vw;
+    }
+    .sideMenu {
+      width: 25vw;
+      height: 100%;
+      padding: 2vw;
+    }
+    .sideMenu a {
+      margin-bottom: 10px;
+      padding: 5px;
+      font-size: 2.5vw;
+    }
+    .sideMenu i.material-icons {
+      font-size: 3vw;
+    }
+    .slideshowModal {
+      z-index: 1000;
+    }
+    .slideshowModal-img {
+      width: 70vw; 
+      left: 16vw;
+      top: 32vw;
+    }
+    .closeSlideshow {
+      top: 4vw;
+      right: 8vw;
+      font-size: 6vw;
+    }
+    .prev, .next {
+      top: 50%;
+      margin-top: -4vw auto;
+      padding: 2vw 50vw;
+      font-size: 6vw;
+    }
+    .prev {
+      right: 40vw;
+      top: 50vw;
+    }
+    .next {
+      left: 40vw;
+      top: 50vw;
+    }
+    .close i {
+      position: absolute;
+      top: 8vw;
+      right: 8vw;
+      color: rgb(255, 242, 0);
+      font-size: 8vw;
+    }
+    .slideshowModals {
+      z-index: 1000;
+    }
+    .slideshowModal-images {
+      width: 70vw;
+      left: 16vw;
+      top: 32vw;
+      position: fixed;
+    }
+    .slideshow-close-buttons {
+      top: 4vw;
+      right: 8vw;
+      font-size: 6vw;
+    }
+    .prev-buttons, .next-buttons {
+      top: 50%;
+      margin-top: -4vw auto;
+      padding: 2vw 50vw;
+      font-size: 6vw;
+    }
+    .prev-buttons {
+      right: 40vw;
+      top: 50vw;
+    }
+    .next-buttons {
+      left: 40vw;
+      top: 50vw;
+    }
+    .close i {
+      font-size: 6vw;
+    }
+    .custom-modal-content {
+      width: 70vw;
+      left: 16vw;
+      top: 32vw;
+    }
+    .custom-close {
+      top: 1vw;
+      right: 4vw;
+      font-size: 6vw;
+    }
+    .custom-carousel-img {
+      width: 100px; 
+      margin: 10px;
+    }
+    .custom-prev, .custom-next {
+      top: 50%;
+      width: auto;
+      padding: 2vw 40vw;
+      margin-top: -4vw;
+      font-size: 6vw;
+      border-radius: 0 3px 3px 0;
+    }
+    .custom-prev {
+      right: 50vw;
+      top: 54vw;
+    }
+    .custom-next {
+      left: 50vw;
+      top: 54vw;
+    }
+    #share-buttons img {
+      width: 3vw;
+      margin: .4vw;
+    }
+} */
+
+/* Mobile Phones */
+/* @media only screen and (min-device-width: 220px) and (max-device-width: 450px) {
+   .title-text {
+      font-size: 10vw;
+      padding: 0;
+      font-family: "Oswald";
+    }
+    .address-text {
+      font-size: 5vw;
+      text-align: left;
+    }
+    .subtext {
+      font-size: 4vw;
+    }
+    .med-text {
+      font-size: 6vw;
+      padding: 0;
+    }
+    .text {
+      font-size: 4vw;
+    }
+    .text-center {
+      font-size: 2vw;
+    }
+    .footer .text {
+      font-size: 4vw;
+    }
+    h1 {
+      font-size: 4em;
+      margin-bottom: 40px;
+      color: white;
+    }
+    h2 {
+      font-size: 6vw;
+    }
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: white;
+    }
+    h4 {
+      font-size: 8vw;
+      color: black;
+    }
+    body {
+      width: 100%;
+      margin: 0;
+    }
+    #home {
+      width: 100%;
+      height: 50vh;
+    }
+    .slideshow {
+      max-width: 100%;
+      height: 100%;
+    }
+    .slideshow img {
+      width: 100%;
+    }
+      @keyframes zoominout {
+        0% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+      }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      grid-gap: 5px;
+      z-index: 998;
+    }
+    .title {
+      font-size: 8vw;
+      justify-content: flex-start;
+      margin: 3% 1% 0 4%;
+    }
+    .floating-menu {
+      width: 22vw;
+      top: 8vw;
+      padding: 2vw;
+    }
+    .sideMenuTitle p, .material-icons {
+      font-size: 4vw;
+    }
+    .sideMenu {
+      width: 38vw;
+      height: 100%;
+      padding: 4vw;
+    }
+    .sideMenu a {
+      margin-bottom: 2vw;
+      padding: 1vw;
+      font-size: 4vw;
+    }
+    .sideMenu i.material-icons {
+      font-size: 6vw;
+      width: auto;
+    }
+    #menu {
+      display: none;
+    }
+    #scroll-button {
+      height: 60px;
+      width: 60px;
+    }
+    #scroll-button i {
+      font-size: 1em;
+    }
+    #details {
+      justify-content: center;
+      max-height: 100%;
+      padding: 30px 20px;
+      grid-gap: 20px;
+    }
+    .detail-item {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .detail-item .material-icons {
+      font-size: 6vw;
+    }
+    .propertyAddress {
+      justify-content: center;
+      display: flex;
+      font-size: 8vw;
+      margin: 20vw 0 10vw 0;
+    }
+    #propertyDescription {
+      justify-content: center;
+    }
+    #propertyDescriptionBottom {
+      justify-content: center;
+    }
+    .description {
+      width: 100%;
+      font-size: 4vw;
+      padding: 5vw 10vw 10vw 10vw;
+    } 
+    .modalImages {
+      width: 100%;
+      border-right: 4vw solid #feeca4f2;
+      border-bottom: 4vw solid #feeca4f2;
+    }
+    .side-modalImages {
+      width: 100%;
+      border-right: 4vw solid #feeca4f2;
+      border-bottom: 4vw solid #feeca4f2;
+    }
+    .topPhoto,
+    .bottomPhoto{
+      margin: 20px;
+      width: 100%;
+      justify-content: flex-end;
+    }
+    .circle {
+      width: 100vw;
+    }
+    .desc-void {
+      justify-content: center;
+      border: 2px solid black;
+      width: 80vw;
+      height: 80vw;
+      font-size: 10vw;
+    }
+    .open-house-preview {
+        font-size: 4vw;
+    }
+    .view-details-cta {
+      font-size: 4vw;
+    }
+    #feature-title {
+      font-size: 8vw;
+      padding: 0;
+      font-family: "Oswald";
+      text-align: center;
+    }
+    #feature-list {      
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: stretch;
+      max-width: 90%;
+      align-content: center;
+      justify-content: center;    
+      margin-top: 4%;
+    }
+    #feature-list a {
+      margin-right: 20px; 
+      margin-bottom: 10px;
+      padding: 8px 15px;
+      border-radius: 20px; 
+      background-color: #f0f0f0; 
+      color: #333; 
+      font-size: 4vw;
+      text-decoration: none;
+      border: 1px solid black;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+    .feature-text {
+      font-size: 4vw;
+      font-family: "Oswald";
+    }
+    #carousels {
+      height: 40vh;
+    }
+    .carousel-row {
+      display: block; 
+      white-space: nowrap; 
+    }
+    .carousel-img {
+      display: inline-block; 
+      width: 18%;
+      height: 20vh;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+    .carousel-container {
+      overflow: hidden;
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .carousels img {
+      flex: 0 0 auto;
+      width: 30vw;
+      margin-right: 1vw;
+    }
+    #first-carousel {
+      display: flex;
+      animation: scrollAnimation 60s linear infinite;
+    }
+    #first-carousel:hover{
+      animation-play-state: paused;
+    }
+    #second-carousel {
+      display: flex;
+      animation: scrollAnimationOpposite 60s linear infinite;
+    }
+    #second-carousel:hover{
+      animation-play-state: paused;
+    }
+    .propertyVideos {
+      top: 10px;
+    }
+    #videoPlayer {
+      width: 80vw;
+    }
+    .propertyCategory {
+      font-size: 8vw;
+    }
+    .floorPlanImage img {
+      width: 80vw;
+    }
+    .propertyRealtor {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      max-height: 100%;
+      margin: 50px 0 0 0;
+      width: 100%;
+    }
+    .centerTitle {
+      font-size: 8vw;
+    }
+    .realtorDetails {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+    }
+    .realtor {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; 
+      width: 100%;
+    }
+    .realtor-info {
+      display: flex;
+      margin: 1%;
+      font-size: 6vw;
+    }
+    .realtor-details {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      width: 60%;
+    }
+    .realtor-details p {
+      padding: 1%;
+      text-align: center;
+      font-size: 4vw;
+    }
+    .realtor-img {
+      width: 20vw; 
+    }
+    .realtorImg {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .contact-form-section {
+      max-width: 60%;
+      margin: 15vw auto;
+    }
+    .form-group label {
+      font-size: 4vw;
+    }
+    .form-group input[type="text"] {
+      width: 50vw;
+    }
+    .inquiryButton {
+      flex-direction: column;
+      width: 60vw;
+    }
+    .inquiryBtn {
+      font-size: 4vw;
+      width: 50vw;
+    }
+    .footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+    .footerDetails {
+      max-width: 65%;
+      margin: 15vw;
+    }
+    .revaLogo {
+      width: 38vw;
+    }
+    .footertext {
+      font-size: 4vw;
+      margin: 10vw 0 10vw 0;
+      padding-bottom: 10vw;
+    }
+    .footerImage {
+      width: 30%;
+      height: 30%;
+    }
+    .socmed ul{
+      margin: 2vw;
+      padding: 2vw;
+    }
+    .socmed li {
+      margin: 0 2vw;
+    }
+    .socmed li img {
+      width: 6vw;
+      height: 6vw;
+    }
+    .floating-menu {
+      top: 8vw;
+      right: 4vw;
+      width: 25vw;
+      padding: 2.5vw;
+    }
+    .sideMenuTitle p, .material-icons {
+      font-size: 4vw;
+      width: auto;
+    }
+    .sideMenu {
+      width: 45vw;
+      height: 100%;
+      padding: 4vw;
+    }
+    .sideMenu a {
+      margin-bottom: 10px;
+      padding: 5px;
+      font-size: 5vw;
+    }
+    .sideMenu i.material-icons {
+      font-size: 6vw;
+    }
+    .slideshowModal {
+      z-index: 1000;
+    }
+    .slideshowModal-img {
+      width: 70vw; 
+      left: 15vw;
+      top: 55vw;
+    }
+    .closeSlideshow {
+      top: 4vw;
+      right: 8vw;
+      font-size: 10vw;
+    }
+    .prev, .next {
+      top: 50%;
+      margin-top: -4vw auto;
+      font-size: 6vw;
+    }
+    .prev {
+      right: 78vw;
+      top: 72vw;
+    }
+    .next {
+      left: 78vw;
+      top: 72vw;
+    }
+    .close i {
+      position: absolute;
+      top: 8vw;
+      right: 8vw;
+      color: rgb(255, 242, 0);
+      font-size: 8vw;
+    }
+    .slideshowModals {
+      z-index: 1000;
+    }
+    .slideshowModal-images {
+      width: 70vw;
+      left: 15vw;
+      top: 55vw;
+      position: fixed;
+    }
+    .slideshow-close-buttons {
+      top: 4vw;
+      right: 8vw;
+      font-size: 10vw;
+    }
+    .prev-buttons, .next-buttons {
+      top: 50%;
+      margin-top: -4vw auto;
+      padding: 2vw 50vw;
+      font-size: 6vw;
+    }
+    .prev-buttons {
+      right: 42vw;
+      top: 80vw;
+    }
+    .next-buttons {
+      left: 42vw;
+      top: 80vw;
+    }
+    .custom-modal-content {
+      width: 70vw;
+      position: fixed;
+      top: 50vw;
+      left: 15vw;
+    }
+    .custom-close {
+      top: 8vw;
+      right: 8vw;
+      font-size: 10vw;
+    }
+    .custom-carousel-img {
+      width: 100px; 
+      margin: 10px;
+    }
+    .custom-prev, .custom-next {
+      top: 50%;
+      padding: 2vw 8vw;
+      margin-top: -4vw auto;
+      font-size: 6vw;
+    }
+    .custom-prev {
+      right: 81vw;
+      top: 72vw;
+    }
+    .custom-next {
+      left: 81vw;
+      top: 72vw;
+    }
+    #share-buttons img {
+      width: 6vw;
+      margin: .4vw;
+    }
+} */
+  </style>
+
+</head>
+<body>
+  <section id="home">
+    <div id="home">
+      <div class="navbar">
+        <div  class="title">257 Fox Meadow Rd</div>
+        <div class="address-bot">257 Fox Meadow Rd</div>
+        <div class="address-bot2">Scarsdale, NY 10583</div>
+        <div id="menu">
+          
+            <a href="#1" id="menu1">Overview</a>
+          
+            <a href="#2" id="menu2">Features</a>
+          
+            <a href="#3" id="menu3">Photos</a>
+          
+            <a href="#4" id="menu4">Video</a>
+          
+            <a href="#5" id="menu5">3D Tour</a>
+          
+            <a href="#6" id="menu6">Floor Plans</a>
+          
+            <a href="#7" id="menu7">Map</a>
+          
+            <a href="#8" id="menu8">Contact</a>
+          
+            <a href="#9" id="menu9">Social</a>
+          
+        </div>
+        <div><a href="#8" class="requests">REQUEST INFO</a>
+        </div>
+      </div>
+      <div class="tv">
+        <video controls autoplay id="homeVideoPlayer" data-video-url="https://videos.pexels.com/video-files/7578550/7578550-sd_640_360_30fps.mp4">
+          <source src="https://videos.pexels.com/video-files/7578550/7578550-sd_640_360_30fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div  id="address">257 Fox Meadow Rd</div>
+      <div class="price">
+        <p>$5,650,000</p>
+      </div>
+      <!-- <button id="scroll-button" onclick="scrollToDescription()">
+        <span><i class="material-icons">south</i></span>
+      </button> -->
+    </div>
+  </section>
+  <!-- <section id="home">
+    <div id="home">
+      <div class="navbar">
+        <div  class="title">257 Fox Meadow Rd</div>
+        <div id="menu">
+          
+            <a href="#1" id="menu1">Overview</a>
+          
+            <a href="#2" id="menu2">Features</a>
+          
+            <a href="#3" id="menu3">Photos</a>
+          
+            <a href="#4" id="menu4">Video</a>
+          
+            <a href="#5" id="menu5">3D Tour</a>
+          
+            <a href="#6" id="menu6">Floor Plans</a>
+          
+            <a href="#7" id="menu7">Map</a>
+          
+            <a href="#8" id="menu8">Contact</a>
+          
+            <a href="#9" id="menu9">Social</a>
+          
+        </div>
+      </div>
+      <div class="slideshow">
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2801%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2859%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2803%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2804%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2805%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2806%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2807%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2808%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2809%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2810%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2811%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2812%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2814%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2815%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2816%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2817%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2818%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2819%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2820%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2821%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2822%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2823%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2824%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2825%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2826%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2827%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2828%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2829%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2830%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2831%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2832%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2833%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2834%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2835%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2836%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2837%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2838%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2839%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2840%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2841%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2842%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2843%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2844%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2845%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2846%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2847%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2848%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2849%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2850%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2851%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2852%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2853%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2854%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2855%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2856%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2857%20of%2060%29.jpg" >
+        
+        <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2858%20of%2060%29.jpg" >
+        
+      </div>
+      <div class="price">
+        <p>$5,650,000</p>
+      </div>
+    </div>
+  </section> -->
+  <section id="offered">
+    <div id="details">
+      <div id="details-menu">
+        
+          <div class="detail-item">
+            <p class="med-text"><i class="material-icons">king_bed</i>
+              4 Beds </p>
+          </div>
+        
+          <div class="detail-item">
+            <p class="med-text"><i class="material-icons">bathtub</i>
+              6 Baths </p>
+          </div>
+        
+          <div class="detail-item">
+            <p class="med-text"><i class="material-icons">view_quilt</i>
+              4,900 sqft </p>
+          </div>
+        
+          <div class="detail-item">
+            <p class="med-text"><i class="material-icons">layers</i>
+              12,500 sf </p>
+          </div>
+        
+      </div>
+    </div>                                                                                                   
+  </section>
+  <section id="1">
+    <div id="description">
+      <div id="propertyDescription">
+        <div class="topPhoto">
+         <div class="photoGrid">
+          <div class="gridItem"><img id="topPhoto" src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2801%20of%2060%29.jpg" class="modalImages"></div>
+          <div class="gridItem">          
+            <img id="topPhoto" src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2804%20of%2060%29.jpg" class="modalImagesBottom">
+            <img id="topPhoto" src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2805%20of%2060%29.jpg" class="modalImagesBottom">
+          </div>
+         </div>
+         <div id="myModal" class="slideshowModal">
+           <span class="closeSlideshow" onclick="closeTopPhotoModal()">&times;</span>
+           <div class="slideshow-modal-content">
+             <div class="mySlides">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2801%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2859%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2803%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2804%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2805%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2806%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2807%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2808%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2809%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2810%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2811%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2812%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2814%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2815%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2816%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2817%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2818%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2819%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2820%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2821%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2822%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2823%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2824%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2825%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2826%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2827%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2828%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2829%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2830%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2831%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2832%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2833%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2834%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2835%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2836%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2837%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2838%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2839%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2840%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2841%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2842%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2843%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2844%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2845%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2846%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2847%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2848%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2849%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2850%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2851%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2852%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2853%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2854%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2855%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2856%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2857%20of%2060%29.jpg" class="slideshowModal-img">
+              
+              <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2858%20of%2060%29.jpg" class="slideshowModal-img">
+              
+             </div>
+           </div>
+            <a class="prev" onclick="topSlides(-1)">&#10094;</a>
+            <a class="next" onclick="topSlides(1)">&#10095;</a>
+         </div>
+        </div>
+        <div class="description">
+          <div class="propertyAddress" >257 Fox Meadow Rd</div>
+            <p>Introducing 257 Fox Meadow Rd, a stunning property located in the desirable city of Scarsdale, NY. This exquisite home boasts an impressive 4 bedrooms and 6 bathrooms, providing ample space for comfortable living. With its generous size of 4,900 square feet and situated on a sizable 12,500 square foot lot, this residence offers both luxury and room to roam. As you step inside this remarkable abode, you'll immediately notice the attention to detail and high-quality finishes throughout. The gleaming hardwood floors create an elegant ambiance that flows seamlessly from room to room. Oversized windows flood the interior with natural light, illuminating every corner of this beautiful home.</p>
+          </div>
+      </div>
+      <div class="horizontal-line"></div>
+      </div>
+  </section >
+  <section id="2">
+    <div id="propertyDescriptionBottom">
+      <div id="features">
+        <div id="feature-title">Features</div>
+        <div id="feature-list">
+          
+            <a href="#" id="features1">Community Clubhouse</a>
+          
+            <a href="#" id="features2">City Lights View</a>
+          
+            <a href="#" id="features3">Beach Access</a>
+          
+            <a href="#" id="features4">Gated Community</a>
+          
+            <a href="#" id="features5">Great Schools</a>
+          
+            <a href="#" id="features6">Hardwood Floors</a>
+          
+            <a href="#" id="features7">Community Pool</a>
+          
+            <a href="#" id="features8">Frameless Glass Showers</a>
+          
+            <a href="#" id="features9">Heated Floors</a>
+          
+            <a href="#" id="features10">Heated Pool</a>
+          
+            <a href="#" id="features11">Ocean Views</a>
+          
+            <a href="#" id="features12">New Construction</a>
+          
+            <a href="#" id="features13">Large Lot</a>
+          
+            <a href="#" id="features14">Large Kitchen</a>
+          
+            <a href="#" id="features15">Oversized Windows</a>
+          
+            <a href="#" id="features16">Pool</a>
+          
+            <a href="#" id="features17">Shopping Nearby</a>
+          
+            <a href="#" id="features18">Walk-In Closets</a>
+          
+            <a href="#" id="features19">Stainless Steel Appliances</a>
+          
+        </div>
+      </div>
+      <div class="bottomPhoto">
+        <div class="photoGrid">
+          <div class="gridItem"><img id="topPhoto" src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2806%20of%2060%29.jpg" class="modalImages"></div>
+          <div class="gridItem">          
+            <img id="topPhoto" src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2807%20of%2060%29.jpg" class="modalImagesBottom">
+            <img id="topPhoto" src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2808%20of%2060%29.jpg" class="modalImagesBottom">
+          </div>
+         </div>      
+        <div id="myslideshowModals" class="slideshowModals">
+            <span class="slideshow-close-buttons" onclick="closeBottomPhotoModal()">&times;</span>
+            <div class="slideshowModal-contents">
+              <div class="my-slides">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2801%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2859%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2803%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2804%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2805%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2806%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2807%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2808%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2809%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2810%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2811%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2812%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2814%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2815%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2816%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2817%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2818%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2819%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2820%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2821%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2822%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2823%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2824%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2825%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2826%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2827%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2828%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2829%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2830%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2831%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2832%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2833%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2834%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2835%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2836%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2837%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2838%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2839%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2840%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2841%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2842%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2843%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2844%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2845%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2846%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2847%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2848%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2849%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2850%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2851%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2852%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2853%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2854%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2855%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2856%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2857%20of%2060%29.jpg" class="slideshowModal-images">
+                
+                <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2858%20of%2060%29.jpg" class="slideshowModal-images">
+                
+              </div>
+            </div>
+              <a class="prev-buttons" onclick="bottomSlides(-1)">&#10094;</a>
+              <a class="next-buttons" onclick="bottomSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    <div class="horizontal-line"></div>
+  </section>
+  <section id ="3">
+    <div id="customModal" class="custom-modal">
+      <span class="custom-close">&times;</span>
+      <img class="custom-modal-content" id="customModalImage">
+    </div>
+    <div class="centerTitle">Photos</div>
+      <div class="gallery">
+        <div class="galleryItem" id="">
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2801%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2801%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2859%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2859%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2803%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2803%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2804%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2804%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2805%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2805%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2806%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2806%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2807%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2807%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2808%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2808%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2809%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2809%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2810%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2810%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2811%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2811%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2812%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2812%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2814%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2814%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2815%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2815%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2816%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2816%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2817%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2817%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2818%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2818%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2819%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2819%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2820%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2820%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2821%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2821%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2822%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2822%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2823%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2823%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2824%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2824%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2825%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2825%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2826%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2826%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2827%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2827%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2828%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2828%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2829%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2829%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2830%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2830%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2831%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2831%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2832%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2832%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2833%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2833%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2834%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2834%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2835%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2835%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2836%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2836%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2837%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2837%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2838%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2838%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2839%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2839%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2840%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2840%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2841%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2841%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2842%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2842%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2843%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2843%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2844%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2844%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2845%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2845%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2846%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2846%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2847%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2847%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2848%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2848%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2849%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2849%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2850%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2850%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2851%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2851%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2852%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2852%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2853%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2853%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2854%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2854%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2855%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2855%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2856%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2856%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2857%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2857%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+          <a href="#" class="custom-modal-trigger" data-image="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2858%20of%2060%29.jpg">
+            <img src="https://vizalu.s3.us-east-1.amazonaws.com/revajobs/11749/new/257%20Fox%20Meadow%20Rd%20Scarsdale%2C%20NY%20%2858%20of%2060%29.jpg" alt="Modal Trigger Image" class="photo">
+          </a>
+          
+        </div>
+      </div> 
+      <div class="galleryText" id="topPhoto">
+        <p>View 57  Photos</p>
+      </div>
+      <div class="horizontal-lines"></div>
+  </section>
+  <section>
+    <div class="showcase-tabs-wrapper text-center">
+      <a href="#" tabindex="0" role="button" tab-data="showcase-videos" class="propertyCategory showcase-tab active">Video</a>
+      <a href="#" tabindex="0" role="button" tab-data="showcase-vtour" class="propertyCategory showcase-tab">3D Tour</a>
+      <a href="#" tabindex="0" role="button" tab-data="showcase-hotspot-floorplans" class="propertyCategory showcase-tab">Floor Plans</a>
+    </div>  
+    <div id="showcase-videos" class="showcase-content">
+        <section id="4">
+            <div class="propertyVideos">
+                <div class="propertyMedia">
+                    
+                        <div class="propertyCategory">
+                            <div class="videoPlayer">
+                                
+                                    <video controls id="videoPlayer" data-video-url="https://videos.pexels.com/video-files/7578540/7578540-uhd_3840_2160_30fps.mp4">
+                                        <source src="https://videos.pexels.com/video-files/7578540/7578540-uhd_3840_2160_30fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                
+                                    <video controls id="videoPlayer" data-video-url="https://videos.pexels.com/video-files/7578552/7578552-sd_640_360_30fps.mp4">
+                                        <source src="https://videos.pexels.com/video-files/7578552/7578552-sd_640_360_30fps.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+  
+    <div id="showcase-vtour" class="showcase-content" style="display: none;">
+        <section id="5">
+            <div class="propertyVideos">
+                <div class="propertyMedia">
+                    
+                        <div class="propertyCategory">
+                            <div class="videoPlayer">
+                                
+                                    <video controls id="videoPlayer" data-video-url="https://bluewaterph.s3.amazonaws.com/m/index.html?fbclid=IwAR3hRzWwJ36Z_rfIeryE8xMDMUY31Znc1h6f4mOiOIYJildmGkKVrNYucLo">
+                                        <source src="https://bluewaterph.s3.amazonaws.com/m/index.html?fbclid=IwAR3hRzWwJ36Z_rfIeryE8xMDMUY31Znc1h6f4mOiOIYJildmGkKVrNYucLo" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div id="showcase-hotspot-floorplans" class="showcase-content" style="display: none;">
+        <section id="6">
+            <div class="propertyVideos">
+                <div class="propertyMedia">
+                    
+                        <div class="propertyCategory">
+                            <div class="floorPlanImage">
+                                
+                                    <img src="https://www.researchgate.net/publication/356610760/figure/fig1/AS:1095470130696234@1638191840764/Sample-floor-plan-image-with-the-specification-of-different-room-sizes-and-furniture.jpg" alt="Floor Plan">
+                                
+                                    <img src="https://www.researchgate.net/publication/356610760/figure/fig1/AS:1095470130696234@1638191840764/Sample-floor-plan-image-with-the-specification-of-different-room-sizes-and-furniture.jpg" alt="Floor Plan">
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="horizontal-lines"></div>
+  </section>
+  <section id="7" class="google-maps-section">
+    <div>
+      <div class="">
+        <div class="centerTitle">LOCATION</div>
+        <div class="centerTitle">257 Fox Meadow Rd, Scarsdale, NY 10583</div>
+      </div>
+    </div>
+    <div class="">
+      <iframe  class="googleMap" src="https://maps.googleapis.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.803537317957!2d-73.79588559999999!3d41.0076731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c29480913b97e7%3A0x525fba3c1deaeb55!2s257%20Fox%20Meadow%20Rd%2C%20Scarsdale%2C%20NY%2010583%2C%20USA!5e0!3m2!1sen!2sph!4v1709632246386!5m2!1sen!2sph" width="700" height="500" frameborder="0" allowfullscreen="" loading="async" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="horizontal-lines"></div>
+  </section>
+  <section>
+    <div class="propertyRealtor">
+      <p class="centerTitle">Presented By</p>
+      <div class="realtorDetails">
+        
+        <div class="realtor">
+          <div class="realtorImg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiAAmwhGSkCnpoRR1tLgFDb2_6YBtjvpB9zOpYTIPjfw&s" alt="Modal Trigger Image" class="realtor-img">
+          </div> 
+          <div class="realtor-details">
+            <h4>Mariah Cherry</h4>
+            <p>Lead Broker</p><br>
+            <p>Lataffa</p>
+            <p>(949) 555-6666</p>
+            <p><a href="mailto:mariahcherry@gmail.com">mariahcherry@gmail.com</a></p>
+            <p><a href="www.lataffa.com">www.lataffa.com</a></p>
+            <p>CalRE# 123456</p>
+          </div>
+        </div>
+        
+        <div class="realtor">
+          <div class="realtorImg">
+            <img src="https://images.squarespace-cdn.com/content/v1/55f2354ce4b07b1c9b739f14/1526870553907-MP68SRHF3DXAS6TNHSL2/linkedin+headshot+brisbane.jpg" alt="Modal Trigger Image" class="realtor-img">
+          </div> 
+          <div class="realtor-details">
+            <h4>Celine Dior</h4>
+            <p>Broker</p><br>
+            <p>Lataffa</p>
+            <p>(949) 949-9499</p>
+            <p><a href="mailto:celinedior@lataffa.com">celinedior@lataffa.com</a></p>
+            <p><a href="www.lataffa.com">www.lataffa.com</a></p>
+            <p>DRE: 123456</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="horizontal-lines"></div>
+  </section>  
+  <section id = "8">
+    <div class="contact-form-section">
+      <div class="title-text">Get in touch</div>
+      <form id="contactForm" action="#" method="post">
+        <div class="form-group">
+          
+            <input type="text" id="firstName" name="firstName" placeholder="First Name*" autocomplete="off">
+          
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name*" autocomplete="off">
+          
+            <input type="text" id="email" name="email" placeholder="Email*" autocomplete="off">
+          
+            <input type="text" id="phone" name="phone" placeholder="Phone*" autocomplete="off">
+          
+            <input type="text" id="comment" name="comment" placeholder="Comment*" autocomplete="off">
+          
+        </div>
+        <div class="inquiryButton">
+            <button class="inquiryBtn" type="submit">Send Inquiry</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section id="9">
+    <div class="footer">
+      <img src=https://revastaff.app/revastaff/logo/powered_by_revastaff.png class="revaLogo">
+        <div class="footertext">Copyright Lataffa, Inc 2024. This website is for example purposes only. This is a fictitious listing and is not for sale. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+    </div>
+  </section>
+    <footer>                                                                                                                                                                  
+      <div  class="socmed">
+        <ul>
+          
+            <li><a href="https://www.facebook.com/REVAstaff"><img src="https://revastaff-ph.app/revastaff/logo/facebook.png"></a></li>
+          
+            <li><a href="https://twitter.com/reva_staff"><img src="https://revastaff-ph.app/revastaff/logo/twitter.png"></a></li>
+          
+            <li><a href="https://www.instagram.com/reva_staff/"><img src="https://revastaff-ph.app/revastaff/logo/instagram.png"></a></li>
+          
+            <li><a href="https://www.pinterest.com/"><img src="https://cdn-icons-png.flaticon.com/128/145/145808.png"></a></li>
+          
+            <li><a href="https://ph.linkedin.com/company/revastaff/"><img src="https://cdn-icons-png.flaticon.com/128/145/145807.png"></a></li>
+          
+            <li><a href="https://revastaff.com/"><img src="https://revastaff.app/revastaff/logo/globe.png"></a></li>
+          
+            <li><a href="https://www.youtube.com/channel/UChjeEbJREEabQ92TLtVXTEA"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png"></a></li>
+          
+            <li><a href="https://www.tiktok.com/@reva_staff"><img src="https://revastaff-ph.app/revastaff/logo/tiktok.png"></a></li>
+          
+        </ul>
+      </div>
+    </footer>
+
+  <!-- <nav class="floating-menu">
+    <div class="sideMenuTitle" id="toggleMenu">        
+      <p classs="subtext">MENU<p>
+      <i class="material-icons">segment</i>
+    </div>
+  </nav>
+  <nav class="sideMenu" id="sideMenu">
+      <div id="closeMenu"><i class="material-icons">close</i></div>
+      
+        <a href="#1" class="scroll-link" id="menu1">Overview</a>
+      
+        <a href="#2" class="scroll-link" id="menu2">Features</a>
+      
+        <a href="#3" class="scroll-link" id="menu3">Photos</a>
+      
+        <a href="#4" class="scroll-link" id="menu4">Video</a>
+      
+        <a href="#5" class="scroll-link" id="menu5">3D Tour</a>
+      
+        <a href="#6" class="scroll-link" id="menu6">Floor Plans</a>
+      
+        <a href="#7" class="scroll-link" id="menu7">Map</a>
+      
+        <a href="#8" class="scroll-link" id="menu8">Contact</a>
+      
+        <a href="#9" class="scroll-link" id="menu9">Social</a>
+      
+        <a href="#home" id="home"><i class="material-icons">keyboard_arrow_up</i> Back to Top</a>
+  </nav> -->
+
+  <div  id="share-buttons">
+    
+      <li><a class="facebook" href=""><img src="https://revastaff-ph.app/revastaff/logo/facebook.png"></a></li>
+    
+      <li><a class="x" href=""><img src="https://revastaff-ph.app/revastaff/logo/twitter.png"></a></li>
+    
+      <li><a class="gmail" href=""><img src="https://cdn-icons-png.flaticon.com/128/732/732200.png"></a></li>
+    
+      <li><a class="instagram" href=""><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"></a></li>
+    
+      <li><a class="pinterest" href=""><img src="https://cdn-icons-png.flaticon.com/128/3536/3536559.png"></a></li>
+    
+      <li><a class="reddit" href=""><img src="https://cdn-icons-png.flaticon.com/128/3536/3536761.png"></a></li>
+    
+  </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const topPhotos = document.querySelectorAll('[id^="topPhoto"]');
+    
+    topPhotos.forEach(function(topPhoto) {
+        topPhoto.addEventListener('click', function() {
+            const topPhotoModal = document.getElementById('myModal');
+            if (topPhotoModal) {
+                topPhotoModal.style.display = 'block';
+            } else {
+                console.log("Modal element not found");
+            }
+        });
+    });
+  });
+
+  function closeTopPhotoModal() {
+    const topPhotoModal = document.getElementById('myModal');
+    topPhotoModal.style.display = 'none';
+  }
+
+  var topSlideIndex = 1;
+  showTopSlide(topSlideIndex);
+
+  function topSlides(n) {
+    showTopSlide(topSlideIndex += n);
+  }
+
+  function presentSlide(n) {
+    showTopSlide(topSlideIndex = n);
+  }
+
+  function showTopSlide(n) {
+    var i;
+    var slideTop = document.getElementsByClassName("mySlides")[0].getElementsByTagName("img");
+    if (n > slideTop.length) { topSlideIndex = 1; }
+    if (n < 1) { topSlideIndex = slideTop.length; }
+    for (i = 0; i < slideTop.length; i++) {
+      slideTop[i].style.display = "none";
+    }
+    slideTop[topSlideIndex - 1].style.display = "block";
+  }
+  
+  //PHOTO GALLERY SLIDESHOW
+  var customModal = document.getElementById('customModal');
+  var customModalImg = document.getElementById('customModalImage');
+  var customModalIndex = 0;
+
+  var customModalTriggers = document.querySelectorAll('.custom-modal-trigger');
+
+  customModalTriggers.forEach(function(trigger, index) {
+    trigger.addEventListener('click', function() {
+      var imageSrc = trigger.getAttribute('data-image');
+      customModalIndex = index;
+
+      customModal.style.display = 'block';
+      showCustomImage(imageSrc);
+    });
+  });
+
+  var customCloseBtn = document.querySelector('.custom-close');
+  customCloseBtn.addEventListener('click', function() {
+    customModal.style.display = 'none';
+  });
+
+  window.addEventListener('click', function(event) {
+    if (event.target === customModal) {
+      customModal.style.display = 'none';
+    }
+  });
+
+  function showCustomImage(src) {
+    customModalImg.src = src;
+
+    if (customModalTriggers.length > 1) {
+      var customPrevBtn = document.createElement('a');
+      customPrevBtn.className = 'custom-prev';
+      customPrevBtn.innerHTML = '&#10094;';
+      customPrevBtn.addEventListener('click', function() {
+        navigateCustomSlides(-1);
+      });
+      customModal.appendChild(customPrevBtn);
+
+      var customNextBtn = document.createElement('a');
+      customNextBtn.className = 'custom-next';
+      customNextBtn.innerHTML = '&#10095;';
+      customNextBtn.addEventListener('click', function() {
+        navigateCustomSlides(1);
+      });
+      customModal.appendChild(customNextBtn);
+    }
+  }
+
+  function navigateCustomSlides(direction) {
+    customModalIndex += direction;
+
+    if (customModalIndex >= customModalTriggers.length) {
+      customModalIndex = 0;
+    } else if (customModalIndex < 0) {
+      customModalIndex = customModalTriggers.length - 1;
+    }
+    var newImageSrc = customModalTriggers[customModalIndex].getAttribute('data-image');
+    showCustomImage(newImageSrc);
+  }
+
+
+  // HOME IMAGES
+  setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+  }, 9000); 
+  const images = document.querySelectorAll('.slideshow img');
+    let currentIndex = 0;
+    function showImage(index) {
+      images.forEach((image, i) => {
+        if (i === index) {
+            image.classList.add('active');
+        } else {
+            image.classList.remove('active');
+        }
+    });
+  }
+  setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+  }, 9000);
+
+  function scrollToDescription() {
+    const descriptionSection = document.getElementById('description');
+    if (descriptionSection) {
+      descriptionSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  function playVideo(element) {
+    var videoPlayer = element.closest('.propertyCategory').querySelector('video');
+    var source = videoPlayer.querySelector('source');
+    var videoUrl = element.dataset.videoUrl;
+    console.log('Clicked video title:', element.innerText);
+    if (videoUrl) {
+      console.log('Video URL:', videoUrl);
+      videoPlayer.pause();
+      videoPlayer.currentTime = 0;
+      videoPlayer.addEventListener('canplay', function onCanPlay() {
+        videoPlayer.removeEventListener('canplay', onCanPlay);
+        videoPlayer.play();
+      });
+      source.src = videoUrl;
+      videoPlayer.load();
+    } else {
+      console.error('Error: Video URL is undefined.');
+    }
+  }
+
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    var section2 = document.getElementById("details");
+    var floatingMenu = document.querySelector('.navbar');
+    if (document.body.scrollTop > section2.offsetTop || document.documentElement.scrollTop > section2.offsetTop) {
+      floatingMenu.style.transform = "translateY(0%)";
+    } else {
+      floatingMenu.style.transform = "translateY(120%)";
+    }
+  }
+
+  // window.onscroll = function() {
+  //   scrollFunction();
+  // };
+
+  // function scrollFunction() {
+  //   var section2 = document.getElementById("details");
+  //   var floatingMenu = document.querySelector('.floating-menu');
+  //   if (document.body.scrollTop > section2.offsetTop || document.documentElement.scrollTop > section2.offsetTop) {
+  //     floatingMenu.style.transform = "translateX(0%)";
+  //   } else {
+  //     floatingMenu.style.transform = "translateX(120%)";
+  //   }
+  // }
+
+  // document.getElementById('toggleMenu').addEventListener('click', function() {
+  //   var sideMenu = document.getElementById('sideMenu');
+  //   if (sideMenu.style.transform === 'translateX(0%)') {
+  //     sideMenu.style.transform = 'translateX(100%)'; 
+  //   } else {
+  //     sideMenu.style.transform = 'translateX(0%)';
+  //   }
+  // });
+
+  // document.getElementById('closeMenu').addEventListener('click', function() {
+  //   var sideMenu = document.getElementById('sideMenu');
+  //   sideMenu.style.transform = 'translateX(100%)'; 
+  // });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 100,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+        const tabs = document.querySelectorAll('.showcase-tab');
+        const contents = document.querySelectorAll('.showcase-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                tabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+
+                const tabData = this.getAttribute('tab-data');
+                contents.forEach(content => {
+                    if (content.id === tabData) {
+                        content.style.display = 'block';
+                    } else {
+                        content.style.display = 'none';
+                    }
+                });
+            });
+        });
+  });
+  document.addEventListener("DOMContentLoaded", function() {
+    function isValidEmail(email) {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    function isValidPhoneNumber(phoneNumber) {
+      var phoneRegex = /^[0-9\s+]+$/;
+      return phoneRegex.test(phoneNumber);
+    }
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+
+      var formData = {};
+
+      document.querySelectorAll('#contactForm input').forEach(function(input) {
+        formData[input.name] = input.value;
+      });
+
+      if (formData['email'] && !isValidEmail(formData['email'])) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      if (formData['phone'] && !isValidPhoneNumber(formData['phone'])) {
+        alert('Please enter a valid phone number.');
+        return;
+      }
+
+      console.log(JSON.stringify(formData, null, 2));
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', handleFormSubmit);
+  });
+
+  const link = encodeURI(window.location.href);
+  const message = encodeURIComponent('Hey, I found this property');
+  const title = encodeURIComponent(document.querySelector('title').textContent);
+
+  const fb = document.querySelector('.facebook');
+  fb.href = `https://www.facebook.com/share.php?u=${link}`;
+
+  const x = document.querySelector('.x');
+  x.href = `https://www.twitter.com/share?&url=${link}&text=${message}&hashtags=realEstate,property`;
+  
+  const gmail = document.querySelector('.gmail');
+  gmail.href = `https://mail.google.com/mail/u/0/#inbox?compose=new&messagebody=${link}`;
+
+  const instagram = document.querySelector('.instagram');
+  instagram.href = `https://instagram.com/direct/new?`;
+
+  webLink = 'https://revastaff.com/production/';
+  const pinterest = document.querySelector('.pinterest');
+  pinterest.href = `https://www.pinterest.com/pin/create/button/?url=${webLink}&description=${message}&title=${title}`;
+  
+  const reddit = document.querySelector('.reddit');
+  reddit.href = `https://www.reddit.com/submit?url=${link}&title=${title}`;
+
+
+  </script>
+</body>
+</html>
